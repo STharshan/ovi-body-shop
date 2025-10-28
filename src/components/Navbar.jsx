@@ -34,9 +34,6 @@ const Navbar = () => {
 
         {/* Right Side */}
         <div className="hidden lg:flex items-center space-x-6">
-          <span className="text-sm tracking-widest">
-            CART <span className="text-[#FF3C00]">(0)</span>
-          </span>
           <button className="bg-[#FF3C00] px-5 py-2 text-sm font-semibold hover:bg-[#ff5722] transition-all duration-200">
             CONTACT US
           </button>
@@ -64,9 +61,6 @@ const Navbar = () => {
               {item.hasPlus && <span className="text-[#FF3C00] ml-1">+</span>}
             </button>
           ))}
-          <span className="text-sm tracking-widest">
-            CART <span className="text-[#FF3C00]">(0)</span>
-          </span>
           <button className="bg-[#FF3C00] px-5 py-2 text-sm font-semibold hover:bg-[#ff5722] transition-all duration-200">
             CONTACT US
           </button>
