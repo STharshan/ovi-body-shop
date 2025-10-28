@@ -39,12 +39,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-gray-400">
               {[
-                "MOT Repair",
-                "Brakes",
-                "Suspensions",
-                "Car Services",
-                "Diagnostics",
-                "Fleet & Lease",
+                "Panel Beating",
+                "Paint Respray",
+                "Dent & Scratch Repair",
+                "Accident Repairs",
+                "Insurance Jobs",
+                "Detailing",
               ].map((service, index) => (
                 <li key={index}>
                   <a href="#services" className="hover:text-white transition-colors duration-300">
@@ -64,7 +64,7 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-[#D70C09] mt-1" size={18} />
                 <a
-                  href="https://maps.app.goo.gl/RMSZjnx8tHW65SYF9"
+                  href="https://maps.app.goo.gl/S35jzCLApzz8zEJi6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors duration-300"
@@ -76,7 +76,7 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <FaPhoneAlt className="text-[#D70C09]" size={18} />
                 <a
-                  href="tel:+441780917600"
+                  href="tel:07788275026"
                   className="hover:text-white transition-colors duration-300"
                 >
                   07788275026
