@@ -1,39 +1,42 @@
+"use client";
 import React, { useState } from "react";
 
 const testimonials = [
   {
     id: 1,
     quote:
-      "Cruze made buying my McLaren effortless with Easy Financing. The Prime Warranty ensures I drive with total confidence on every thrilling journey!",
-    name: "Alex Reed",
-    location: "New York",
+      "Ovi Car Body Repair transformed my car after a major accident — flawless finish, quick turnaround, and friendly service!",
+    name: "Daniel Ross",
+    location: "Adelaide",
     image:
       "https://images.unsplash.com/photo-1600703134032-65a8dc20b7e6?auto=format&fit=crop&w=800&q=80",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     id: 2,
-    quote: "Smart Trade-In at Cruze was fair. Loving my new Lamborghini!",
-    name: "Mark Lane",
-    location: "Florida",
-    avatar: "https://randomuser.me/api/portraits/men/64.jpg",
+    quote:
+      "Professional team and top-tier workmanship. My car looks brand new again — highly recommend Ovi’s workshop!",
+    name: "Chloe Turner",
+    location: "South Australia",
+    avatar: "https://randomuser.me/api/portraits/women/64.jpg",
   },
   {
     id: 3,
-    quote: "The Cruze team simplified financing for my Ferrari with ease!",
-    name: "Luke Nash",
-    location: "Illinois",
+    quote:
+      "Outstanding attention to detail — they handled both paint and panel perfectly. The service was fast and reliable.",
+    name: "Michael Brooks",
+    location: "Glenelg",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg",
   },
   {
     id: 4,
     quote:
-      "Cruze’s Smart Trade-In valued my car perfectly. Exceptional service—now I love my dream Mercedes!",
-    name: "Paul Gray",
-    location: "Texas",
+      "From booking to delivery, Ovi Car Body Repair made everything smooth. My car’s finish is better than showroom!",
+    name: "Sarah Mitchell",
+    location: "Morphett Vale",
     image:
       "https://images.unsplash.com/photo-1581375256161-8229f5b9dca0?auto=format&fit=crop&w=800&q=80",
-    avatar: "https://randomuser.me/api/portraits/men/76.jpg",
+    avatar: "https://randomuser.me/api/portraits/women/76.jpg",
   },
 ];
 
@@ -42,26 +45,34 @@ const TestimonialsSection = () => {
 
   return (
     <section
-      className="bg-[#F8FAFC] py-16 px-6 md:px-12 overflow-hidden relative"
+      className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
+      {/* Background Glow */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
+      </div>
+
       {/* Header */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-14">
         <div>
-          <div className="flex items-center gap-2 mb-2">
-            <span className="w-3 h-3 bg-blue-600 rounded-sm"></span>
-            <h4 className="text-blue-600 font-semibold uppercase tracking-wide text-sm">
-              Testimonials
-            </h4>
-          </div>
-          <h2 className="text-[36px] md:text-[44px] font-extrabold leading-[1.2] text-gray-900 tracking-tight">
-            See What Our Clients <br />
-            Say About Their Rides
+          <p className="text-[#D70C09] uppercase tracking-[5px] text-sm font-semibold mb-2">
+            Testimonials
+          </p>
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-[1.2] text-white">
+            What Our <span className="text-[#D70C09]">Customers</span> Say
           </h2>
+          <p className="text-[#868386] text-base mt-4 max-w-lg">
+            At Ovi Car Body Repair, our mission is to deliver precision, passion
+            and perfection. Here’s what real customers have to say about their
+            experience with our expert team.
+          </p>
         </div>
-        <button className="mt-6 md:mt-0 flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-all">
-          Book Test Drive
+
+        <button className="mt-8 md:mt-0 flex items-center gap-2 bg-[#D70C09] hover:bg-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300">
+          Book Your Repair
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-4 h-4"
@@ -77,37 +88,37 @@ const TestimonialsSection = () => {
 
       {/* Top Row — Left to Right */}
       <div
-        className="flex gap-8 animate-scroll-left"
+        className="relative z-10 flex gap-8 animate-scroll-left"
         style={{ animationPlayState: paused ? "paused" : "running" }}
       >
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row1-${i}`}
-            className={`bg-white shadow-sm rounded-2xl p-6 flex-shrink-0 hover:shadow-md transition-all ${
-              item.image ? "w-[420px]" : "w-[350px]"
+            className={`bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 ${
+              item.image ? "w-[420px]" : "w-[360px]"
             }`}
           >
             {item.image && (
               <img
                 src={item.image}
                 alt="car"
-                className="w-full h-48 object-cover rounded-xl mb-4"
+                className="w-full h-44 object-cover rounded-xl mb-4"
               />
             )}
-            <p className="italic text-gray-700 mb-4 text-[15px] leading-relaxed">
+            <p className="italic text-[#CCCCCC] mb-4 text-[15px] leading-relaxed">
               “{item.quote}”
             </p>
             <div className="flex items-center gap-3 mt-auto">
               <img
                 src={item.avatar}
                 alt={item.name}
-                className="w-10 h-10 rounded-full object-cover"
+                className="w-10 h-10 rounded-full object-cover border border-[#D70C09]/40"
               />
               <div>
-                <h4 className="text-gray-900 font-semibold text-sm">
+                <h4 className="text-white font-semibold text-sm">
                   {item.name}
                 </h4>
-                <p className="text-gray-500 text-xs">{item.location}</p>
+                <p className="text-[#868386] text-xs">{item.location}</p>
               </div>
             </div>
           </div>
@@ -116,13 +127,13 @@ const TestimonialsSection = () => {
 
       {/* Bottom Row — Right to Left */}
       <div
-        className="flex gap-8 mt-10 animate-scroll-right"
+        className="relative z-10 flex gap-8 mt-10 animate-scroll-right"
         style={{ animationPlayState: paused ? "paused" : "running" }}
       >
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row2-${i}`}
-            className={`bg-white shadow-sm rounded-2xl p-6 flex-shrink-0 hover:shadow-md transition-all ${
+            className={`bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 ${
               item.image ? "w-[400px]" : "w-[340px]"
             }`}
           >
@@ -130,32 +141,32 @@ const TestimonialsSection = () => {
               <img
                 src={item.image}
                 alt="car"
-                className="w-full h-48 object-cover rounded-xl mb-4"
+                className="w-full h-44 object-cover rounded-xl mb-4"
               />
             )}
-            <p className="italic text-gray-700 mb-4 text-[15px] leading-relaxed">
+            <p className="italic text-[#CCCCCC] mb-4 text-[15px] leading-relaxed">
               “{item.quote}”
             </p>
             <div className="flex items-center gap-3 mt-auto">
               <img
                 src={item.avatar}
                 alt={item.name}
-                className="w-10 h-10 rounded-full object-cover"
+                className="w-10 h-10 rounded-full object-cover border border-[#D70C09]/40"
               />
               <div>
-                <h4 className="text-gray-900 font-semibold text-sm">
+                <h4 className="text-white font-semibold text-sm">
                   {item.name}
                 </h4>
-                <p className="text-gray-500 text-xs">{item.location}</p>
+                <p className="text-[#868386] text-xs">{item.location}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Fade edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#F8FAFC] to-transparent pointer-events-none"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#F8FAFC] to-transparent pointer-events-none"></div>
+      {/* Edge Fades */}
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent pointer-events-none"></div>
 
       <style>{`
         @keyframes scroll-left {
