@@ -19,7 +19,7 @@ const About = () => {
                     {/* Rotating Tire Image - Centered Below */}
                     <div className="flex justify-center items-center relative">
                         {/* Glow effect behind tire */}
-                        <div className="absolute w-[250px] h-[250px] md:w-[320px] bg-orange-500/10 rounded-full blur-3xl"></div>
+                       <div className="absolute w-[250px] h-[250px] md:w-[320px] bg-orange-500/10 rounded-full blur-3xl"></div>
 
                         {/* Rotating Tire Image */}
                         <div className="relative w-[250px] h-[250px] md:w-[320px]">
@@ -34,7 +34,7 @@ const About = () => {
             </div>
 
             {/* Content Grid */}
-            <div className=" max-w-6xl mx-auto">
+            <div className=" mt-16 max-w-6xl mx-auto">
                 {/* Two Sections Side by Side */}
                 <div className="grid md:grid-cols-2 gap-10 mb-10">
                     <div>
