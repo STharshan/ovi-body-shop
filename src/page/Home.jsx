@@ -1,4 +1,6 @@
 
+
+
 import React from 'react'
 import Navbar from '../components/Navbar'
 import ServiceSection from '../components/Service'
@@ -9,6 +11,7 @@ import TestimonialsCarousel from '../components/Testimonials'
 import GallerySection from "../components/GallerySection"
 import ContactSection from '../components/Contact'
 import FindUs from '../components/Findus'
+import Faq from "../components/faq"
 const Home = () => {
     return (
         <div>
@@ -21,6 +24,7 @@ const Home = () => {
             <GallerySection />
             <ContactSection />
             <FindUs />
+              <Faq />
         </div>
     )
 }
