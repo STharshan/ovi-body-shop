@@ -12,10 +12,11 @@ import GallerySection from "../components/GallerySection"
 import ContactSection from '../components/Contact'
 import FindUs from '../components/Findus'
 import Faq from "../components/faq"
+import Footer from '../components/Footer'
+
 const Home = () => {
     return (
         <div>
-            <Navbar />
             <HeroSection />
             <LogoShowcase />
             <About />
@@ -24,7 +25,7 @@ const Home = () => {
             <GallerySection />
             <ContactSection />
             <FindUs />
-              <Faq />
+            <Faq />
         </div>
     )
 }

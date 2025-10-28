@@ -51,19 +51,19 @@ const ContactSection = () => {
         {/* RIGHT SIDE - CONTACT FORM */}
         <div className="border-2 border-gray-200 p-6 rounded-xl">
           <h2 className="text-2xl font-semibold mb-3 text-white">Get in touch</h2>
-          <p className="text-white text-sm mb-8">
+          <p className="text-white text-sm mb-3">
             We're always here to assist you at CarHub. Our customer support team is
             dedicated to addressing your inquiries.
           </p>
 
           <form className="space-y-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-white">
               <div>
                 <label className="text-sm font-medium">Name</label>
                 <input
                   type="text"
                   placeholder="Your name"
-                  className="w-full border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:border-red-500"
+                  className="w-full border  border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:border-red-500"
                 />
               </div>
               <div>
@@ -76,7 +76,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-white">
               <div>
                 <label className="text-sm font-medium">Phone no</label>
                 <input
@@ -95,7 +95,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div>
+            <div className="text-white">
               <label className="text-sm font-medium">Message</label>
               <textarea
                 rows="4"
