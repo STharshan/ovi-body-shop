@@ -55,9 +55,9 @@ const ServiceSection = () => {
         <div className="sticky top-10">
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-black uppercase">
             Excellence in Automotive Service{" "}
-            <span className="text-[#D70C09]">Since 1996</span>
+            <span className="text-orange-600">Since 1996</span>
           </h2>
-          <button className="mt-8 bg-[#D70C09] text-white font-bold px-8 py-3 rounded-md uppercase hover:bg-[#868386] transition-all">
+          <button className="mt-8 bg-orange-600 text-white font-bold px-8 py-3 rounded-md uppercase hover:bg-orange-700 transition-all">
             Read More
           </button>
         </div>
@@ -76,14 +76,14 @@ const ServiceSection = () => {
                 <h3
                   className={`text-[22px] md:text-[24px] font-bold uppercase tracking-wide transition-colors duration-300 ${
                     hoveredId === service.id
-                      ? "text-[#D70C09]"
+                      ? "text-orange-600"
                       : "text-[#0A0A0A]"
                   }`}
                 >
                   <span
                     className={`mr-3 text-[26px] md:text-[28px] font-bold transition-colors ${
                       hoveredId === service.id
-                        ? "text-[#D70C09]"
+                        ? "text-orange-600"
                         : "text-black"
                     }`}
                   >
@@ -94,7 +94,7 @@ const ServiceSection = () => {
                 <p
                   className={`uppercase font-semibold text-sm mt-1 transition-colors ${
                     hoveredId === service.id
-                      ? "text-black"
+                      ? "text-orange-500"
                       : "text-[#666666]"
                   }`}
                 >
