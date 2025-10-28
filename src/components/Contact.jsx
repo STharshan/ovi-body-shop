@@ -8,16 +8,26 @@ const ContactSection = () => {
       id="contact"
       className="relative overflow-hidden bg-[#000000] text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
     >
-      {/* 🔴 Red Glow Gradients */}
+      {/* 🔴 Combined Red Glow Gradients (merged + your extra ones) */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/25 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
+        {/* Top-left intense glow (your new one + existing blended) */}
+        <div className="absolute top-[-250px] left-[-250px] w-[850px] h-[850px] bg-[#D70C09]/35 blur-[200px] rounded-full"></div>
+
+        {/* Mid subtle reflection (kept for smoothness) */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#D70C09]/10 blur-[220px] rounded-full"></div>
+
+        {/* Bottom-right soft glow (your new one blended) */}
+        <div className="absolute bottom-[-250px] right-[-250px] w-[700px] h-[700px] bg-[#D70C09]/25 blur-[180px] rounded-full"></div>
+
+        {/* ✨ Extra enhancement from your snippet */}
+        <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
       {/* 🌟 Section Content */}
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-8">
         {/* LEFT SIDE — Contact Info */}
-        <div className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-8 shadow-lg">
+        <div className="bg-[#0E0E0E]/90 border border-[#1C1C1C] rounded-2xl p-8 shadow-[0_0_30px_rgba(215,12,9,0.15)]">
           <h3 className="text-2xl font-bold mb-8 text-[#D70C09] uppercase tracking-wide">
             Contact Information
           </h3>
@@ -25,7 +35,7 @@ const ContactSection = () => {
           <div className="space-y-10">
             {/* Address */}
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full">
+              <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full shadow-[0_0_15px_rgba(215,12,9,0.3)]">
                 <Home className="w-5 h-5" />
               </div>
               <div>
@@ -41,7 +51,7 @@ const ContactSection = () => {
 
             {/* Phone */}
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full">
+              <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full shadow-[0_0_15px_rgba(215,12,9,0.3)]">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
@@ -55,7 +65,7 @@ const ContactSection = () => {
 
             {/* Email */}
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full">
+              <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full shadow-[0_0_15px_rgba(215,12,9,0.3)]">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
@@ -70,7 +80,7 @@ const ContactSection = () => {
         </div>
 
         {/* RIGHT SIDE — Contact Form */}
-        <div className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-8 shadow-lg">
+        <div className="bg-[#0E0E0E]/90 border border-[#1C1C1C] rounded-2xl p-8 shadow-[0_0_30px_rgba(215,12,9,0.15)]">
           <h2 className="text-3xl font-extrabold mb-3 uppercase tracking-wide text-white">
             Get In Touch
           </h2>
