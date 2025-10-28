@@ -43,9 +43,8 @@ export default function FindUs() {
           data-aos-delay="400"
         >
           <iframe
-            title="Google Map - RS Mobile Services"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d151.24596664559945!2d-0.514958!3d52.6611432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487789090fcbab6d%3A0xa43484cc851f8227!2sRS%20Mobile%20Services%20LTD!5e0!3m2!1sen!2slk!4v1759940991750!5m2!1sen!2slk"
-            width="100%"
+            title="Google Map - Ovi Car Body Repair"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1962.4160863668385!2d-1.4711455!3d53.3622136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879828604312ce5%3A0xeaa84131f59b895a!2sOvi%20Car%20Body%20Repair!5e1!3m2!1sen!2slk!4v1761680560902!5m2!1sen!2slk"
             height="100%"
             allowFullScreen
             loading="lazy"
