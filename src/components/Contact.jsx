@@ -3,14 +3,14 @@ import { Home, Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-black py-16">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* LEFT SIDE - CONTACT INFO */}
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 shadow-sm">
           <div className="space-y-10">
             {/* Address */}
             <div className="flex items-start gap-4">
-              <div className="text-red-600 p-2 bg-red-100 rounded-full">
+              <div className="text-[#D70C09] p-2 bg-red-100 rounded-full">
                 <Home className="w-5 h-5" />
               </div>
               <div>
@@ -24,7 +24,7 @@ const ContactSection = () => {
 
             {/* Phone */}
             <div className="flex items-start gap-4">
-              <div className="text-red-600 p-2 bg-red-100 rounded-full">
+              <div className="text-[#D70C09] p-2 bg-red-100 rounded-full">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
@@ -36,7 +36,7 @@ const ContactSection = () => {
 
             {/* Email */}
             <div className="flex items-start gap-4">
-              <div className="text-red-600 p-2 bg-red-100 rounded-full">
+              <div className="text-[#D70C09] p-2 bg-red-100 rounded-full">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
@@ -49,9 +49,9 @@ const ContactSection = () => {
         </div>
 
         {/* RIGHT SIDE - CONTACT FORM */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-3">Get in touch</h2>
-          <p className="text-gray-600 text-sm mb-8">
+        <div className="border-2 border-gray-200 p-6 rounded-xl">
+          <h2 className="text-2xl font-semibold mb-3 text-white">Get in touch</h2>
+          <p className="text-white text-sm mb-8">
             We're always here to assist you at CarHub. Our customer support team is
             dedicated to addressing your inquiries.
           </p>
@@ -106,7 +106,7 @@ const ContactSection = () => {
 
             <button
               type="submit"
-              className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition"
+              className="w-full bg-[#D70C09] text-white py-2 rounded-md hover:bg-red-700 transition"
             >
               Submit
             </button>

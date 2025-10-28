@@ -40,7 +40,7 @@ const LogoStrip = ({ direction = "left" }) => {
 
 export default function LogoShowcase() {
   return (
-    <section className="relative bg-[#FF3C00] flex items-center justify-center py-20 overflow-hidden">
+    <section className="relative bg-[#D70C09] flex items-center justify-center py-20 overflow-hidden">
       {/* Background Rotating 3D Shape */}
       <motion.img
         src="/image.svg"
@@ -57,7 +57,7 @@ export default function LogoShowcase() {
 
         {/* Center Text */}
         <div className="flex flex-col items-center text-center flex-1">
-          <h2 className="text-black text-xl sm:text-2xl md:text-3xl font-semibold tracking-[0.2em] uppercase">
+          <h2 className="text-black text-xl font-semibold tracking-[0.2em] uppercase">
             You've chosen the best
           </h2>
         </div>

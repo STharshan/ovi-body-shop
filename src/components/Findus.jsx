@@ -16,20 +16,20 @@ export default function FindUs() {
 
   return (
     <section
-      className="py-16 px-4 bg-white dark:bg-black transition-colors duration-500"
+      className="py-16 px-4 bg-black transition-colors duration-500"
       id="find-us"
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <p
-          className="text-[#ef5a24] dark:text-[#4ab8e9] font-semibold tracking-widest mb-3 uppercase text-lg"
+          className="text-[#D70C09]  font-semibold tracking-widest mb-3 uppercase text-lg"
           data-aos="fade-up"
         >
           Find Us
         </p>
 
         <h2
-          className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-8"
+          className="text-3xl md:text-4xl font-extrabold text-white  mb-8"
           data-aos="fade-up"
           data-aos-delay="150"
         >
@@ -38,7 +38,7 @@ export default function FindUs() {
 
         {/* Google Map */}
         <div
-          className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 w-full h-[400px]"
+          className="rounded-xl overflow-hidden shadow-lg border border-gray-200  w-full h-[400px]"
           data-aos="zoom-in-up"
           data-aos-delay="400"
         >

@@ -10,33 +10,38 @@ const Navbar = () => {
         { name: "ABOUT US" },
         { name: "SERVICE" },
         { name: "TESTIMONIAL" },
-        { name: "GALLERY"},
-        { name: "CONTACT"},
+        { name: "GALLERY" },
+        { name: "CONTACT" },
         { name: "FAQ" },
     ];
 
     return (
-        <nav className="bg-black fixed text-white tracking-wide">
-            <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <nav className="bg-black fixed max-w-6xl p-3 mx-auto text-white tracking-wide top-3 rounded-lg left-0 right-0 z-50 ">
+            <div className=" flex justify-between items-center">
                 {/* Logo */}
-                <div className="text-lg font-bold tracking-[0.15em]">CARSY</div>
+                <div className="flex items-center">
+                    <img
+                        src="/path-to-your-logo.png"
+                        alt="CARSY Logo"
+                        className="h-8 w-auto object-contain"
+                    />
+                </div>
 
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex items-center space-x-8">
                     {navItems.map((item, idx) => (
                         <button
                             key={idx}
-                            className="relative hover:text-red-500 transition-all duration-200"
+                            className="relative hover:text-[#D70C09] cursor-pointer transition-all duration-300"
                         >
                             {item.name}
-                            {item.hasPlus && <span className="text-[#FF3C00] ml-1">+</span>}
                         </button>
                     ))}
                 </div>
 
                 {/* Right Side */}
                 <div className="hidden lg:flex items-center space-x-6">
-                    <button className="bg-[#FF3C00] px-5 py-2 text-sm font-semibold hover:bg-[#ff5722] transition-all duration-200">
+                    <button className="bg-[#D70C09] rounded-lg px-5 py-2 text-sm font-semibold hover:bg-[#868386] transition-all duration-300">
                         CONTACT US
                     </button>
                 </div>
@@ -46,7 +51,7 @@ const Navbar = () => {
                     className="lg:hidden text-white"
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    {isOpen ? <X size={26} /> : <Menu size={26} />}
+                    {isOpen ? <X size={26} className="hover:text-[#D70C09] cursor-pointer" /> : <Menu size={26} className="hover:text-[#D70C09] cursor-pointer" />}
                 </button>
             </div>
 
@@ -56,14 +61,13 @@ const Navbar = () => {
                     {navItems.map((item, idx) => (
                         <button
                             key={idx}
-                            className="text-white hover:text-[#FF3C00] transition-all"
+                            className="text-white hover:text-[#D70C09] transition-all"
                             onClick={() => setIsOpen(false)}
                         >
                             {item.name}
-                            {item.hasPlus && <span className="text-[#FF3C00] ml-1">+</span>}
                         </button>
                     ))}
-                    <button className="bg-[#FF3C00] px-5 py-2 text-sm font-semibold hover:bg-[#ff5722] transition-all duration-200">
+                    <button className="bg-[#D70C09] rounded-lg px-5 py-2 text-sm font-semibold hover:bg-[#868386] transition-all duration-200">
                         CONTACT US
                     </button>
                 </div>
