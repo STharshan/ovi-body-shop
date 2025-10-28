@@ -1,52 +1,59 @@
-"use client";
+
+
+
+ "use client";
 import React from "react";
 import CircularGallery from "./CircularGallery";
 
 export default function GallerySection() {
-  // Gallery items (all images now)
-  const galleryItems = [
-    { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-      { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-        { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-          { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-            { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-              { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-                { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-                  { type: "image", src: "https://picsum.photos/200/300", text: "Our Workshop" },
-                  
+const galleryItems = [
+    { type: "image", src: "im.jpeg", text: "Our Workshop" },
+      { type: "image", src: "im1.jpeg", text: "Our Workshop" },
+        { type: "image", src: "im2.jpeg", text: "Our Workshop" },
+          { type: "image", src: "im3.jpeg", text: "Our Workshop" },
+            { type: "image", src: "im4.jpeg", text: "Our Workshop" },
+              { type: "image", src: "im5.jpeg", text: "Our Workshop" },
+                { type: "image", src: "im6.jpeg", text: "Our Workshop" },
+
+      
+
    
   ];
 
   return (
     <section
       id="gallery"
-      className="relative overflow-hidden bg-[#000000] text-white font-inter py-20 md:py-28 border-t border-[#1A1A1A]"
+      className="relative overflow-hidden bg-[#000000] text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
     >
-      {/* Background Glow */}
-      <div className="pointer-events-none absolute inset-0 mx-auto max-w-6xl opacity-60">
-        <div
-          className="absolute left-1/2 top-[25%] -translate-x-1/2 w-[1400px] h-[1400px] rounded-full blur-[150px]"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(255,59,59,0.15) 0%, transparent 70%)",
-          }}
-        />
-      </div>
+      {/* Red Glow Gradient */}
+      <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
 
       {/* Section Heading */}
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
-        <p className="inline-block border border-[#ff3b3b33] text-xs tracking-[4px] uppercase px-6 py-1 rounded-full text-[#ff6666] mb-5">
-          Our Gallery
+        <p className="text-[#D70C09] uppercase tracking-[5px] text-sm font-semibold mb-4">
+          Ovi Car Body Repair
         </p>
 
-        <h2 className="mb-3 text-3xl sm:text-4xl md:text-5xl font-semibold text-white">
-          Experience <span className="italic text-[#FF3B3B]">Our Work</span>
+        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
+          <span className="text-white">PERFORMANCE MEETS </span>
+          <span className="text-[#D70C09]">PERFECTION</span>
         </h2>
 
-        <p className="mb-14 text-sm sm:text-base text-[#AAAAAA] max-w-2xl mx-auto">
-          A glimpse into our precision craftsmanship and automotive expertise.
-          Each project reflects our dedication to quality and detail.
+        <p className="text-[#868386] max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-10">
+          At Ovi Car Body Repair, we redefine automotive care through precision,
+          passion, and performance. From dent removals to full restorations, our
+          experts ensure your car looks and drives as good as new.
         </p>
+
+        <div className="flex flex-wrap justify-center gap-4 mb-14">
+          <button className="bg-[#D70C09] hover:bg-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300">
+            Book Repair
+          </button>
+          <button className="border border-[#D70C09] hover:border-[#868386] hover:text-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300">
+            View Services
+          </button>
+        </div>
       </div>
 
       {/* CircularGallery Display */}
