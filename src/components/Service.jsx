@@ -81,7 +81,7 @@ const ServiceSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className={`flex justify-between items-center transition-all duration-300 ease-out border-b border-[#1C1C1C] pb-5 hover:bg-[#0E0E0E]`}
+              className={`flex justify-between items-center transition-all duration-300 ease-out border-b border-[#1C1C1C] pb-5 `}
               onMouseEnter={() => setHoveredId(service.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
