@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const testimonials = [
   {
@@ -39,8 +41,17 @@ const testimonials = [
 const TestimonialsSection = () => {
   const [paused, setPaused] = useState(false);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-out-cubic",
+      once: false,
+    });
+  }, []);
+
   return (
     <section
+      id="testimonials"
       className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -51,9 +62,12 @@ const TestimonialsSection = () => {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      {/* Header */}
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-14">
-        <div>
+      {/* 🏁 Header */}
+      <div
+        className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-14"
+        data-aos="fade-up"
+      >
+        <div data-aos="fade-right">
           <p className="text-[#D70C09] uppercase tracking-[5px] text-sm font-semibold mb-2">
             Testimonials
           </p>
@@ -67,7 +81,11 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <button className="mt-8 md:mt-0 flex items-center gap-2 bg-[#D70C09] hover:bg-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300">
+        <button
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          className="mt-8 md:mt-0 flex items-center gap-2 bg-[#D70C09] hover:bg-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300"
+        >
           Book Your Repair
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +100,10 @@ const TestimonialsSection = () => {
         </button>
       </div>
 
-      {/* Top Row */}
+      {/* 💬 Top Row */}
       <div
+        data-aos="fade-up"
+        data-aos-delay="200"
         className="relative z-10 flex gap-8 animate-scroll-left"
         style={{ animationPlayState: paused ? "paused" : "running" }}
       >
@@ -110,8 +130,10 @@ const TestimonialsSection = () => {
         ))}
       </div>
 
-      {/* Bottom Row */}
+      {/* 💬 Bottom Row */}
       <div
+        data-aos="fade-up"
+        data-aos-delay="400"
         className="relative z-10 flex gap-8 mt-10 animate-scroll-right"
         style={{ animationPlayState: paused ? "paused" : "running" }}
       >
@@ -138,10 +160,11 @@ const TestimonialsSection = () => {
         ))}
       </div>
 
-      {/* Edge Fades */}
+      {/* 🎨 Edge Fades */}
       <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent pointer-events-none"></div>
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent pointer-events-none"></div>
 
+      {/* ⏩ Auto Scroll Keyframes */}
       <style>{`
         @keyframes scroll-left {
           0% { transform: translateX(0); }

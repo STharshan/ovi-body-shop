@@ -1,8 +1,18 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Home, Phone, Mail } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      easing: "ease-out-cubic",
+      once: false,
+    });
+  }, []);
+
   return (
     <section
       id="contact"
@@ -15,23 +25,34 @@ const ContactSection = () => {
       </div>
 
       {/* 🌟 Section Content */}
-      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-8">
+      <div
+        className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-8"
+        data-aos="fade-up"
+      >
         {/* LEFT SIDE — Contact Info */}
-        <div className="bg-[#0E0E0E]/90 border border-[#1C1C1C] rounded-2xl p-8 shadow-[0_0_30px_rgba(215,12,9,0.15)]">
-          <h3 className="text-2xl font-bold mb-8 text-[#D70C09] uppercase tracking-wide">
+        <div
+          data-aos="fade-right"
+          className="bg-[#0E0E0E]/90 border border-[#1C1C1C] rounded-2xl p-8 shadow-[0_0_30px_rgba(215,12,9,0.15)]"
+        >
+          <h3
+            data-aos="fade-down"
+            className="text-2xl font-bold mb-8 text-[#D70C09] uppercase tracking-wide"
+          >
             Contact Information
           </h3>
 
           <div className="space-y-10">
             {/* Address */}
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full shadow-[0_0_15px_rgba(215,12,9,0.3)]">
                 <Home className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-semibold text-white mb-1">
-                  Office Address
-                </h4>
+                <h4 className="font-semibold text-white mb-1">Office Address</h4>
                 <p className="text-sm text-[#868386] leading-relaxed">
                   4517 Washington Ave. <br />
                   Manchester, Kentucky 39495
@@ -40,7 +61,11 @@ const ContactSection = () => {
             </div>
 
             {/* Phone */}
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full shadow-[0_0_15px_rgba(215,12,9,0.3)]">
                 <Phone className="w-5 h-5" />
               </div>
@@ -54,7 +79,11 @@ const ContactSection = () => {
             </div>
 
             {/* Email */}
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full shadow-[0_0_15px_rgba(215,12,9,0.3)]">
                 <Mail className="w-5 h-5" />
               </div>
@@ -70,7 +99,11 @@ const ContactSection = () => {
         </div>
 
         {/* RIGHT SIDE — Contact Form */}
-        <div className="bg-[#0E0E0E]/90 border border-[#1C1C1C] rounded-2xl p-8 shadow-[0_0_30px_rgba(215,12,9,0.15)]">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          className="bg-[#0E0E0E]/90 border border-[#1C1C1C] rounded-2xl p-8 shadow-[0_0_30px_rgba(215,12,9,0.15)]"
+        >
           <h2 className="text-3xl font-extrabold mb-3 uppercase tracking-wide text-white">
             Get In Touch
           </h2>
@@ -83,7 +116,11 @@ const ContactSection = () => {
             requests.
           </p>
 
-          <form className="space-y-6">
+          <form
+            className="space-y-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="text-sm font-medium text-[#868386]">
@@ -143,6 +180,8 @@ const ContactSection = () => {
 
             <button
               type="submit"
+              data-aos="zoom-in"
+              data-aos-delay="400"
               className="w-full bg-[#D70C09] text-white py-3 rounded-md font-semibold uppercase tracking-wide hover:bg-[#868386] transition-all duration-300"
             >
               Send Message

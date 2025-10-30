@@ -1,19 +1,43 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
-  return (
-    <section className="relative bg-black text-white px-6 md:px-12 lg:px-24 py-20 overflow-hidden">
-      {/* Background Accent */}
-      <div className="absolute right-0 bottom-0 w-[500px] h-[500px] bg-orange-600/20 blur-[180px] rounded-full -z-10"></div>
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false, // triggers again when scrolling back up
+      easing: "ease-out-cubic",
+    });
+  }, []);
 
-      {/* Top Section Title */}
+  return (
+    <section
+      id="about"
+      className="relative bg-black text-white px-6 md:px-12 lg:px-24 py-20 overflow-hidden"
+    >
+      {/* 🔥 Red Glow Background */}
+      <div className="absolute inset-0 pointer-events-none -z-10">
+        <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
+      </div>
+
+      {/* 🏁 Top Section Title */}
       <div className="max-w-6xl mx-auto relative">
-        <p className="text-white uppercase tracking-widest mb-4 border-l-4 border-[#D70C09] pl-4">
+        <p
+          data-aos="fade-down"
+          className="text-white uppercase tracking-widest mb-4 border-l-4 border-[#D70C09] pl-4"
+        >
           Discover the Passion and Expertise Behind Ovi Car Body Repair
         </p>
 
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between relative">
+        <div
+          className="flex flex-col md:flex-row items-start md:items-center justify-between relative"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           {/* Left Side Title */}
           <h2 className="text-3xl md:text-5xl font-semibold leading-tight uppercase max-w-6xl z-10">
             Delivering Precision, Quality & Speed — The Trusted Name in Car Body
@@ -31,10 +55,11 @@ const About = () => {
         </div>
       </div>
 
-      {/* Content Grid */}
+      {/* 📘 Content Grid */}
       <div className="mt-16 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 mb-10">
-          <div>
+          {/* Our Story */}
+          <div data-aos="fade-up" data-aos-delay="300">
             <h6 className="text-white uppercase tracking-widest mb-3 border-l-4 border-[#D70C09] pl-4">
               Our Story
             </h6>
@@ -49,7 +74,8 @@ const About = () => {
             </p>
           </div>
 
-          <div>
+          {/* Our Commitment */}
+          <div data-aos="fade-up" data-aos-delay="400">
             <h6 className="text-white uppercase tracking-widest mb-3 border-l-4 border-[#D70C09] pl-4">
               Our Commitment
             </h6>
