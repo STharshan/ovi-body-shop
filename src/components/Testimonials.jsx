@@ -5,38 +5,34 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Ovi Car Body Repair transformed my car after a major accident — flawless finish, quick turnaround, and friendly service!",
-    name: "Daniel Ross",
-    location: "Adelaide",
-    image:
-      "https://images.unsplash.com/photo-1600703134032-65a8dc20b7e6?auto=format&fit=crop&w=800&q=80",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      "Ovi did an amazing job on my car after I had an accident. It looks completely brand new and exceeded my expectations. A very reasonable price and quick turnaround. I really appreciated the way he kept me informed throughout by sending me pictures and updates of the progress. I highly recommend him to anyone that wants a professional job doing. Lastly he was very welcoming and simplified things as I am not at all mechanical. Thank you Ovi :)",
+    name: "Kitti Nangtalar",
+    location: "UK",
+    avatar: "1.png",
   },
   {
     id: 2,
     quote:
-      "Professional team and top-tier workmanship. My car looks brand new again — highly recommend Ovi’s workshop!",
-    name: "Chloe Turner",
-    location: "South Australia",
-    avatar: "https://randomuser.me/api/portraits/women/64.jpg",
+      "Ovi did a really excellent job on my van. We had scratches and dents on the rear panel caused by a lorry. It was a big job and Ovi was one of the few body workers in Sheffield willing to take it on.",
+    name: "Jerome Mowat",
+    location: "UK",
+    avatar: "2.png",
   },
   {
     id: 3,
     quote:
-      "Outstanding attention to detail — they handled both paint and panel perfectly. The service was fast and reliable.",
-    name: "Michael Brooks",
-    location: "Glenelg",
-    avatar: "https://randomuser.me/api/portraits/men/22.jpg",
+      "My Renault Capture car was involved in an accident and the rear passenger door and panel was damaged and dented. Ovi completed the job on time and to a high standard. Strongly recommend him for any body repair job.",
+    name: "Jay J",
+    location: "UK",
+    avatar: "3.png",
   },
   {
     id: 4,
     quote:
-      "From booking to delivery, Ovi Car Body Repair made everything smooth. My car’s finish is better than showroom!",
-    name: "Sarah Mitchell",
-    location: "Morphett Vale",
-    image:
-      "https://images.unsplash.com/photo-1581375256161-8229f5b9dca0?auto=format&fit=crop&w=800&q=80",
-    avatar: "https://randomuser.me/api/portraits/women/76.jpg",
+      "Ovi delivered perfectly — my car looks brand new now! I’m super impressed with the job he did and got updates throughout the process. Highly recommended!",
+    name: "Phoebe Potkins",
+    location: "UK",
+    avatar: "4.png",
   },
 ];
 
@@ -49,10 +45,10 @@ const TestimonialsSection = () => {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* Background Glow */}
+      {/* 🔥 Red Glow Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
+        <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
       {/* Header */}
@@ -86,7 +82,7 @@ const TestimonialsSection = () => {
         </button>
       </div>
 
-      {/* Top Row — Left to Right */}
+      {/* Top Row */}
       <div
         className="relative z-10 flex gap-8 animate-scroll-left"
         style={{ animationPlayState: paused ? "paused" : "running" }}
@@ -94,30 +90,19 @@ const TestimonialsSection = () => {
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row1-${i}`}
-            className={`bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 ${
-              item.image ? "w-[420px]" : "w-[360px]"
-            }`}
+            className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex flex-col justify-between flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 w-[360px] h-[340px]"
           >
-            {item.image && (
-              <img
-                src={item.image}
-                alt="car"
-                className="w-full h-44 object-cover rounded-xl mb-4"
-              />
-            )}
-            <p className="italic text-[#CCCCCC] mb-4 text-[15px] leading-relaxed">
+            <p className="italic text-[#CCCCCC] text-[15px] leading-relaxed line-clamp-[8] overflow-hidden">
               “{item.quote}”
             </p>
-            <div className="flex items-center gap-3 mt-auto">
+            <div className="flex items-center gap-3 mt-6">
               <img
                 src={item.avatar}
                 alt={item.name}
                 className="w-10 h-10 rounded-full object-cover border border-[#D70C09]/40"
               />
               <div>
-                <h4 className="text-white font-semibold text-sm">
-                  {item.name}
-                </h4>
+                <h4 className="text-white font-semibold text-sm">{item.name}</h4>
                 <p className="text-[#868386] text-xs">{item.location}</p>
               </div>
             </div>
@@ -125,7 +110,7 @@ const TestimonialsSection = () => {
         ))}
       </div>
 
-      {/* Bottom Row — Right to Left */}
+      {/* Bottom Row */}
       <div
         className="relative z-10 flex gap-8 mt-10 animate-scroll-right"
         style={{ animationPlayState: paused ? "paused" : "running" }}
@@ -133,30 +118,19 @@ const TestimonialsSection = () => {
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row2-${i}`}
-            className={`bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 ${
-              item.image ? "w-[400px]" : "w-[340px]"
-            }`}
+            className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex flex-col justify-between flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 w-[340px] h-[320px]"
           >
-            {item.image && (
-              <img
-                src={item.image}
-                alt="car"
-                className="w-full h-44 object-cover rounded-xl mb-4"
-              />
-            )}
-            <p className="italic text-[#CCCCCC] mb-4 text-[15px] leading-relaxed">
+            <p className="italic text-[#CCCCCC] text-[15px] leading-relaxed line-clamp-[8] overflow-hidden">
               “{item.quote}”
             </p>
-            <div className="flex items-center gap-3 mt-auto">
+            <div className="flex items-center gap-3 mt-6">
               <img
                 src={item.avatar}
                 alt={item.name}
                 className="w-10 h-10 rounded-full object-cover border border-[#D70C09]/40"
               />
               <div>
-                <h4 className="text-white font-semibold text-sm">
-                  {item.name}
-                </h4>
+                <h4 className="text-white font-semibold text-sm">{item.name}</h4>
                 <p className="text-[#868386] text-xs">{item.location}</p>
               </div>
             </div>
