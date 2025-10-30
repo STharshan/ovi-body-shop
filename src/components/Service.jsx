@@ -51,16 +51,16 @@ const ServiceSection = () => {
 
   return (
     <section className="relative bg-[#000000] py-16 px-6 md:px-12 font-['Orbitron',sans-serif] text-white">
-      {/* ✅ Gradient moved behind content to avoid scroll issue */}
-      <div className="fixed inset-0 -z-10">
+      {/* 🔥 Red Gradient Glow (Same as Testimonials Section) */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
-        <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      {/* ✅ Scroll + Sticky content stays normal */}
+      {/* ✅ Scroll + Sticky content */}
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        {/* Left Content */}
-        <div className="sticky top-10 self-start">
+        {/* Left Content — Sticky */}
+        <div className="sticky top-16 self-start">
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-white uppercase">
             Ovi Car Body Repair{" "}
             <span className="text-[#D70C09]">Since 2012</span>
@@ -76,12 +76,12 @@ const ServiceSection = () => {
           </button>
         </div>
 
-        {/* Right Services */}
+        {/* Right Content — Service List */}
         <div className="relative flex flex-col gap-8">
           {services.map((service) => (
             <div
               key={service.id}
-              className={`flex justify-between items-center transition-all duration-300 ease-out border-b border-[#1C1C1C] pb-5 `}
+              className="flex justify-between items-center transition-all duration-300 ease-out border-b border-[#1C1C1C] pb-5"
               onMouseEnter={() => setHoveredId(service.id)}
               onMouseLeave={() => setHoveredId(null)}
             >

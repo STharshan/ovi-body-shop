@@ -8,20 +8,10 @@ const ContactSection = () => {
       id="contact"
       className="relative overflow-hidden bg-[#000000] text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
     >
-      {/* 🔴 Combined Red Glow Gradients (merged + your extra ones) */}
-      <div className="absolute inset-0 -z-10 pointer-events-none">
-        {/* Top-left intense glow (your new one + existing blended) */}
-        <div className="absolute top-[-250px] left-[-250px] w-[850px] h-[850px] bg-[#D70C09]/35 blur-[200px] rounded-full"></div>
-
-        {/* Mid subtle reflection (kept for smoothness) */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#D70C09]/10 blur-[220px] rounded-full"></div>
-
-        {/* Bottom-right soft glow (your new one blended) */}
-        <div className="absolute bottom-[-250px] right-[-250px] w-[700px] h-[700px] bg-[#D70C09]/25 blur-[180px] rounded-full"></div>
-
-        {/* ✨ Extra enhancement from your snippet */}
-        <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
+      {/* 🔥 Red Gradient Glow (Same as Testimonials Section) */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
       {/* 🌟 Section Content */}
