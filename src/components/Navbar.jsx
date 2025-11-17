@@ -42,9 +42,9 @@ const Navbar = () => {
           onClick={() => handleScroll("/")}
         >
           <img
-            src="/path-to-your-logo.png"
+            src="/logo.png"
             alt="CARSY Logo"
-            className="h-8 w-auto object-contain"
+            className="h-14 w-auto object-contain"
           />
         </div>
 
