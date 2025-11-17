@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 
 const services = [
-  { id: 1, title: "Panel Beating", subtitle: "Bodywork Restoration", image: "https://cdn.prod.website-files.com/651fcaf09f0ed92a42afe0e1/65266060443e8ae4314a52c9_6.png" },
-  { id: 2, title: "Paint Resprays", subtitle: "Blowtherm Technology", image: "https://cdn.prod.website-files.com/651fcaf09f0ed92a42afe0e1/65266025912cc5f97c875c6d_5.png" },
-  { id: 3, title: "Dent & Scratch Repair", subtitle: "24-Hour Turnaround", image: "https://cdn.prod.website-files.com/651fcaf09f0ed92a42afe0e1/65265ffe92e9f9d8d97cfd4b_4.png" },
-  { id: 4, title: "Accident Repairs", subtitle: "Minor to Major Damage", image: "https://cdn.prod.website-files.com/651fcaf09f0ed92a42afe0e1/65265fd712c46c5ddd18f7e5_3.png" },
-  { id: 5, title: "Insurance Jobs", subtitle: "Claim Support", image: "https://cdn.prod.website-files.com/651fcaf09f0ed92a42afe0e1/65265fa40e7a6705c7ef53d4_2.png" },
-  { id: 6, title: "Detailing", subtitle: "Polish & Finishing", image: "https://cdn.prod.website-files.com/651fcaf09f0ed92a42afe0e1/65265f40416728f696f95a6e_1.png" },
+  { id: 1, title: "Panel Beating", subtitle: "Bodywork Restoration", image: "/Panel.png" },
+  { id: 2, title: "Paint Resprays", subtitle: "Blowtherm Technology", image: "/Paint.png" },
+  { id: 3, title: "Dent & Scratch Repair", subtitle: "24-Hour Turnaround", image: "/Dent.png" },
+  { id: 4, title: "Accident Repairs", subtitle: "Minor to Major Damage", image: "/Accident.png" },
+  { id: 5, title: "Insurance Jobs", subtitle: "Claim Support", image: "/Insurance.png" },
+  { id: 6, title: "Detailing", subtitle: "Polish & Finishing", image: "/Detailing.png" },
 ];
 
 const ServiceSection = () => {
