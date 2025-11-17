@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -15,7 +15,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 mb-4 mt-3 leading-relaxed">
-              We use Blowtherm paint respray technology, so you can be sure to get a fantastic finish on your vehicle every time.
+              We use Blowtherm paint respray technology, so you can be sure to
+              get a fantastic finish on your vehicle every time.
             </p>
             <div className="flex space-x-4">
               <a
@@ -34,9 +35,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-bold mb-4 text-[#D70C09]">
-              Services
-            </h3>
+            <h3 className="font-bold mb-4 text-[#D70C09]">Services</h3>
             <ul className="space-y-2 text-gray-400">
               {[
                 "Panel Beating",
@@ -47,7 +46,10 @@ export default function Footer() {
                 "Detailing",
               ].map((service, index) => (
                 <li key={index}>
-                  <a href="#services" className="hover:text-white transition-colors duration-300">
+                  <a
+                    href="#services"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     {service}
                   </a>
                 </li>
@@ -57,22 +59,22 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold mb-4 text-[#D70C09] ">
-              Contact Info
-            </h3>
+            <h3 className="font-bold mb-4 text-[#D70C09]">Contact Info</h3>
             <ul className="space-y-4 text-gray-400">
+              {/* ⭐ Updated Address + New Map URL */}
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-[#D70C09] mt-1" size={18} />
                 <a
-                  href="https://maps.app.goo.gl/S35jzCLApzz8zEJi6"
+                  href="https://www.google.com/maps?client=safari&sca_esv=81b9b8c5170cc920&hl=en-gb&kgmid=/g/11g6l_nw51&shndl=30&kgs=89641ea44133d406&shem=shrtsdl&um=1&ie=UTF-8&fb=1&gl=lk&sa=X&geocode=KeUsMQSGgnlIMVqJm_UxQajq&daddr=1+Sheaf+Bank,+Lowfield,+Sheffield+S2+3DA,+United+Kingdom"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors duration-300"
                 >
-                  215 Attercliffe Road , Sheffield  S4 7XF
+                  1 Sheaf Bank, Lowfield, Sheffield S2 3DA, United Kingdom
                 </a>
               </li>
 
+              {/* Phone */}
               <li className="flex items-center space-x-3">
                 <FaPhoneAlt className="text-[#D70C09]" size={18} />
                 <a
@@ -82,16 +84,6 @@ export default function Footer() {
                   07788275026
                 </a>
               </li>
-
-              {/* <li className="flex items-center space-x-3">
-                <FaEnvelope className="text-[#D70C09]" size={18} />
-                <a
-                  href="mailto:sam.ferries@rsmobileservices.co.uk"
-                  className="hover:text-white transition-colors duration-300 break-all"
-                >
-                  sam.ferries@rsmobileservices.co.uk
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>
@@ -103,7 +95,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
-          {/* Left: Terms & Privacy */}
+          {/* Terms & Privacy */}
           <div className="flex gap-4 text-sm">
             <Link
               to="/terms"
@@ -120,7 +112,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* Center: Powered by Ansely (unchanged) */}
+          {/* Powered by (unchanged) */}
           <p className="text-center font-semibold text-gray-400">
             Powered by{" "}
             <a
