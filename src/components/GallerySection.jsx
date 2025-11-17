@@ -14,13 +14,38 @@ export default function GallerySection() {
   }, []);
 
   const galleryItems = [
-    { type: "image", src: "im.jpeg", text: "Our Workshop" },
-    { type: "image", src: "im1.jpeg", text: "Our Workshop" },
-    { type: "image", src: "im2.jpeg", text: "Our Workshop" },
-    { type: "image", src: "im3.jpeg", text: "Our Workshop" },
-    { type: "image", src: "im4.jpeg", text: "Our Workshop" },
-    { type: "image", src: "im5.jpeg", text: "Our Workshop" },
-    { type: "image", src: "im6.jpeg", text: "Our Workshop" },
+    // ⭐ Old images
+    { type: "image", src: "/im.jpeg", text: "Our Workshop" },
+    { type: "image", src: "/im1.jpeg", text: "Our Workshop" },
+
+    // ⭐ New image + video mixed
+    { type: "image", src: "/o.jpeg", text: "Repair Work" },
+    { type: "video", src: "/o4.mp4", text: "Repair Process" },
+
+    // ⭐ Old image
+    { type: "image", src: "/im2.jpeg", text: "Our Workshop" },
+
+    // ⭐ New image + video
+    { type: "image", src: "/o1.jpeg", text: "Finishing Touches" },
+    { type: "video", src: "/o5.mp4", text: "Final Inspection" },
+
+    // ⭐ Old image
+    { type: "image", src: "/im3.jpeg", text: "Our Workshop" },
+
+    // ⭐ New image + video
+    { type: "image", src: "/o2.jpeg", text: "Polishing Work" },
+    { type: "video", src: "/o6.mp4", text: "Deep Restoring" },
+
+    // ⭐ Old image
+    { type: "image", src: "/im4.jpeg", text: "Our Workshop" },
+
+    // ⭐ New image + video
+    { type: "image", src: "/o3.jpeg", text: "Completed Car" },
+    { type: "video", src: "/o7.mp4", text: "Finishing Video" },
+
+    // ⭐ Old remaining images
+    { type: "image", src: "/im5.jpeg", text: "Our Workshop" },
+    { type: "image", src: "/im6.jpeg", text: "Our Workshop" },
   ];
 
   return (
@@ -39,15 +64,12 @@ export default function GallerySection() {
       >
         <p
           className="text-[#D70C09] uppercase tracking-[5px] text-sm font-semibold mb-4"
-          data-aos="fade-down"
         >
           Ovi Car Body Repair
         </p>
 
         <h2
           className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white"
-          data-aos="fade-up"
-          data-aos-delay="200"
         >
           <span className="text-white">PERFORMANCE MEETS </span>
           <span className="text-[#D70C09]">PERFECTION</span>
@@ -55,20 +77,14 @@ export default function GallerySection() {
 
         <p
           className="text-[#868386] max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-10"
-          data-aos="fade-up"
-          data-aos-delay="400"
         >
           At Ovi Car Body Repair, we redefine automotive care through precision,
           passion, and performance. From dent removals to full restorations, our
           experts ensure your car looks and drives as good as new.
         </p>
 
-        {/* 🔘 Buttons with animation */}
-        <div
-          className="flex flex-wrap justify-center gap-4 mb-14"
-          data-aos="zoom-in"
-          data-aos-delay="600"
-        >
+        {/* 🔘 Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mb-14">
           <button className="bg-[#D70C09] hover:bg-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300">
             Book Repair
           </button>
@@ -83,7 +99,7 @@ export default function GallerySection() {
         className="relative z-10 mx-auto max-w-[1200px] w-full px-4 sm:px-6 md:px-8"
         style={{ height: "600px", position: "relative" }}
         data-aos="fade-up"
-        data-aos-delay="800"
+        data-aos-delay="200"
       >
         <CircularGallery
           items={galleryItems}

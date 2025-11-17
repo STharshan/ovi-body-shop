@@ -3,11 +3,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  "/logos/logo1.svg",
-  "/logos/logo2.svg",
-  "/logos/logo3.svg",
-  "/logos/logo4.svg",
-  "/logos/logo5.svg",
+  "/logo.png",
+  "/logo.png",
+  "/logo.png",
+  "/logo.png",
 ];
 
 // reusable scrolling logo strip

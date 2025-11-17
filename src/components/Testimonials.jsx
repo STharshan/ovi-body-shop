@@ -31,7 +31,7 @@ const testimonials = [
   {
     id: 4,
     quote:
-      "Ovi delivered perfectly — my car looks brand new now! I’m super impressed with the job he did and got updates throughout the process. Highly recommended!",
+      "Ovi delivered perfectly — my car looks brand new now! I’m super impressed with the job he did and got updates through out the process. Highly recommended!",
     name: "Phoebe Potkins",
     location: "UK",
     avatar: "4.png",
