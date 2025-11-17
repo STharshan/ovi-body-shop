@@ -49,6 +49,18 @@ const TestimonialsSection = () => {
     });
   }, []);
 
+  // ⭐ Smooth Scroll Function
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offsetTop = section.offsetTop - 80; // adjust for navbar height
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section
       id="testimonials"
@@ -56,13 +68,13 @@ const TestimonialsSection = () => {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* 🔥 Red Glow Background */}
+      {/* 🔥 Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      {/* 🏁 Header */}
+      {/* ⭐ Header */}
       <div
         className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-14"
         data-aos="fade-up"
@@ -76,12 +88,13 @@ const TestimonialsSection = () => {
           </h2>
           <p className="text-[#868386] text-base mt-4 max-w-lg">
             At Ovi Car Body Repair, our mission is to deliver precision, passion
-            and perfection. Here’s what real customers have to say about their
-            experience with our expert team.
+            and perfection. Here’s what real customers have to say.
           </p>
         </div>
 
+        {/* ⭐ UPDATED BUTTON WITH SCROLL */}
         <button
+          onClick={() => scrollToSection("contact")}
           data-aos="zoom-in"
           data-aos-delay="200"
           className="mt-8 md:mt-0 flex items-center gap-2 bg-[#D70C09] hover:bg-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300"
@@ -100,7 +113,7 @@ const TestimonialsSection = () => {
         </button>
       </div>
 
-      {/* 💬 Top Row */}
+      {/* Top Row */}
       <div
         data-aos="fade-up"
         data-aos-delay="200"
@@ -130,7 +143,7 @@ const TestimonialsSection = () => {
         ))}
       </div>
 
-      {/* 💬 Bottom Row */}
+      {/* Bottom Row */}
       <div
         data-aos="fade-up"
         data-aos-delay="400"
@@ -160,11 +173,11 @@ const TestimonialsSection = () => {
         ))}
       </div>
 
-      {/* 🎨 Edge Fades */}
+      {/* Edge Fade */}
       <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent pointer-events-none"></div>
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent pointer-events-none"></div>
 
-      {/* ⏩ Auto Scroll Keyframes */}
+      {/* Animation Keyframes */}
       <style>{`
         @keyframes scroll-left {
           0% { transform: translateX(0); }
