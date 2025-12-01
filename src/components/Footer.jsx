@@ -48,7 +48,7 @@ export default function Footer() {
                 <li key={index}>
                   <HashLink
                     smooth
-                    to="/#services"
+                    to="/#service"
                     className="hover:text-white transition-colors duration-300"
                   >
                     {service}
