@@ -73,10 +73,10 @@ const ContactSection = () => {
                 <h4 className="font-semibold text-white mb-1">Office Address</h4>
 
                 <a
-                  href="https://www.google.com/maps/dir//1+Sheaf+Bank,+Lowfield,+Sheffield+S2+3DA,+United+Kingdom"
+                  href="https://maps.app.goo.gl/bGAHxiqBYfqTL37SA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-[#868386] underline hover:text-white"
+                  className="text-sm text-[#868386] hover:underline hover:text-white"
                 >
                   1 Sheaf Bank, Lowfield <br />
                   Sheffield S2 3DA <br />
@@ -98,7 +98,7 @@ const ContactSection = () => {
                   href="https://wa.me/447788275026"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm underline text-[#D70C09] hover:text-white"
+                  className="text-sm hover:underline text-[#D70C09] hover:text-white"
                 >
                   +44 7788 275026 (WhatsApp)
                 </a>
@@ -116,7 +116,7 @@ const ContactSection = () => {
 
                 <a
                   href="mailto:vanyek_bogdan@yahoo.com"
-                  className="text-sm text-[#868386] underline hover:text-white"
+                  className="text-sm text-[#868386] hover:underline hover:text-white"
                 >
                   vanyek_bogdan@yahoo.com
                 </a>

@@ -9,10 +9,10 @@ const Navbar = () => {
     { name: "HOME", id: "/" },
     { name: "ABOUT US", id: "about" },
     { name: "SERVICE", id: "service" },
-    { name: "TESTIMONIAL", id: "testimonials" },
     { name: "GALLERY", id: "gallery" },
-    { name: "CONTACT", id: "contact" },
+    { name: "TESTIMONIAL", id: "testimonials" },
     { name: "FAQ", id: "faq" },
+    { name: "CONTACT", id: "contact" },
   ];
 
   const handleScroll = (id) => {

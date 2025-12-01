@@ -1,6 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaEnvelope, FaFacebookF, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3">
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#D70C09] to-[#0072ff] bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-linear-to-r from-[#D70C09] to-[#0072ff] bg-clip-text text-transparent">
                 Ovi <span className="text-gray-400"> Car Body Repair</span>
               </span>
             </div>
@@ -46,12 +46,13 @@ export default function Footer() {
                 "Detailing",
               ].map((service, index) => (
                 <li key={index}>
-                  <a
-                    href="#services"
+                  <HashLink
+                    smooth
+                    to="/#services"
                     className="hover:text-white transition-colors duration-300"
                   >
                     {service}
-                  </a>
+                  </HashLink>
                 </li>
               ))}
             </ul>
@@ -61,11 +62,10 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 text-[#D70C09]">Contact Info</h3>
             <ul className="space-y-4 text-gray-400">
-              {/* ⭐ Updated Address + New Map URL */}
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-[#D70C09] mt-1" size={18} />
                 <a
-                  href="https://www.google.com/maps?client=safari&sca_esv=81b9b8c5170cc920&hl=en-gb&kgmid=/g/11g6l_nw51&shndl=30&kgs=89641ea44133d406&shem=shrtsdl&um=1&ie=UTF-8&fb=1&gl=lk&sa=X&geocode=KeUsMQSGgnlIMVqJm_UxQajq&daddr=1+Sheaf+Bank,+Lowfield,+Sheffield+S2+3DA,+United+Kingdom"
+                  href="https://maps.app.goo.gl/bGAHxiqBYfqTL37SA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors duration-300"
@@ -74,7 +74,6 @@ export default function Footer() {
                 </a>
               </li>
 
-              {/* Phone */}
               <li className="flex items-center space-x-3">
                 <FaPhoneAlt className="text-[#D70C09]" size={18} />
                 <a
@@ -82,6 +81,15 @@ export default function Footer() {
                   className="hover:text-white transition-colors duration-300"
                 >
                   07788275026
+                </a>
+              </li>
+              <li className="flex items-center space-x-3">
+                <FaEnvelope className="text-[#D70C09]" size={18} />
+                <a
+                  href="mailto:vanyek_bogdan@yahoo.com"
+                  className="hover:text-white transition-colors duration-300"
+                >
+                  vanyek_bogdan@yahoo.com
                 </a>
               </li>
             </ul>
@@ -95,24 +103,23 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
-          {/* Terms & Privacy */}
           <div className="flex gap-4 text-sm">
-            <Link
-              to="/terms"
+            <HashLink
+              smooth
+              to="/#terms"
               className="text-gray-400 hover:text-[#D70C09] transition duration-300"
             >
               Terms & Conditions
-            </Link>
+            </HashLink>
             <span className="text-gray-500">|</span>
-            <Link
-              to="/privacy"
+            <HashLink
+              smooth
+              to="/#privacy"
               className="text-gray-400 hover:text-[#D70C09] transition duration-300"
             >
               Privacy Policy
-            </Link>
+            </HashLink>
           </div>
-
-          {/* Powered by (unchanged) */}
           <p className="text-center font-semibold text-gray-400">
             Powered by{" "}
             <a

@@ -14,12 +14,7 @@ const ServiceSection = () => {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className="relative bg-[#000000] py-16 px-6 md:px-12 font-['Orbitron',sans-serif] text-white" id="service">
-      {/* 🔥 Background Glow */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
-      </div>
+    <section className="relative py-16 px-6 md:px-12 font-['Orbitron',sans-serif] text-white" id="services">
 
       {/* ✅ Grid layout wrapper */}
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-start">
@@ -52,42 +47,38 @@ const ServiceSection = () => {
               {/* Text */}
               <div>
                 <h3
-                  className={`text-[20px] sm:text-[22px] md:text-[24px] font-bold uppercase tracking-wide transition-colors duration-300 ${
-                    hoveredId === service.id ? "text-[#D70C09]" : "text-white"
-                  }`}
+                  className={`text-[20px] sm:text-[22px] md:text-[24px] font-bold uppercase tracking-wide transition-colors duration-300 ${hoveredId === service.id ? "text-[#D70C09]" : "text-white"
+                    }`}
                 >
                   <span
-                    className={`mr-2 sm:mr-3 text-[22px] sm:text-[26px] md:text-[28px] font-bold transition-colors ${
-                      hoveredId === service.id
+                    className={`mr-2 sm:mr-3 text-[22px] sm:text-[26px] md:text-[28px] font-bold transition-colors ${hoveredId === service.id
                         ? "text-[#D70C09]"
                         : "text-[#868386]"
-                    }`}
+                      }`}
                   >
                     {service.id}
                   </span>
                   {service.title}
                 </h3>
                 <p
-                  className={`uppercase font-semibold text-xs sm:text-sm mt-1 transition-colors ${
-                    hoveredId === service.id
+                  className={`uppercase font-semibold text-xs sm:text-sm mt-1 transition-colors ${hoveredId === service.id
                       ? "text-[#D70C09]"
                       : "text-[#868386]"
-                  }`}
+                    }`}
                 >
                   {service.subtitle}
                 </p>
               </div>
 
               {/* Image */}
-              <div className="w-full sm:w-[280px] h-[160px] sm:h-[170px] mt-4 sm:mt-0 relative overflow-hidden rounded-sm [clip-path:polygon(10%_0,100%_0,90%_100%,0%_100%)] shadow-md">
+              <div className="w-full sm:w-[280px] h-40 sm:h-[170px] mt-4 sm:mt-0 relative overflow-hidden rounded-sm [clip-path:polygon(10%_0,100%_0,90%_100%,0%_100%)] shadow-md">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className={`absolute w-full h-full object-cover transition-all duration-500 ease-out transform ${
-                    hoveredId === service.id
+                  className={`absolute w-full h-full object-cover transition-all duration-500 ease-out transform ${hoveredId === service.id
                       ? "opacity-100 translate-x-0 scale-100"
                       : "opacity-0 translate-x-5 scale-95"
-                  }`}
+                    }`}
                 />
               </div>
             </div>
