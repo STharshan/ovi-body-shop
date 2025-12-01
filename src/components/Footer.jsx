@@ -106,7 +106,7 @@ export default function Footer() {
           <div className="flex gap-4 text-sm">
             <HashLink
               smooth
-              to="/#terms"
+              to="/terms"
               className="text-gray-400 hover:text-[#D70C09] transition duration-300"
             >
               Terms & Conditions
@@ -114,7 +114,7 @@ export default function Footer() {
             <span className="text-gray-500">|</span>
             <HashLink
               smooth
-              to="/#privacy"
+              to="/privacy"
               className="text-gray-400 hover:text-[#D70C09] transition duration-300"
             >
               Privacy Policy
