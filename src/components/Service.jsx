@@ -1,16 +1,26 @@
 "use client";
 import React, { useState } from "react";
 
-const services = [
-  { id: 1, title: "Panel Beating", subtitle: "Bodywork Restoration", image: "/Panel.png" },
-  { id: 2, title: "Paint Resprays", subtitle: "Blowtherm Technology", image: "/Paint.png" },
-  { id: 3, title: "Dent & Scratch Repair", subtitle: "24-Hour Turnaround", image: "/Dent.png" },
-  { id: 4, title: "Accident Repairs", subtitle: "Minor to Major Damage", image: "/Accident.png" },
-  { id: 5, title: "Insurance Jobs", subtitle: "Claim Support", image: "/Insurance.png" },
-  { id: 6, title: "Detailing", subtitle: "Polish & Finishing", image: "/Detailing.png" },
-];
+const serviceData = {
+  "Ovi Car Body Repair": [
+    { id: 1, title: "Panel Beating", subtitle: "Bodywork Restoration", image: "/Panel.png" },
+    { id: 2, title: "Paint Resprays", subtitle: "Blowtherm Technology", image: "/Paint.png" },
+    { id: 3, title: "Dent & Scratch Repair", subtitle: "24-Hour Turnaround", image: "/Dent.png" },
+    { id: 4, title: "Accident Repairs", subtitle: "Minor to Major Damage", image: "/Accident.png" },
+    { id: 5, title: "Insurance Jobs", subtitle: "Claim Support", image: "/Insurance.png" },
+    { id: 6, title: "Detailing", subtitle: "Polish & Finishing", image: "/Detailing.png" },
+  ],
+  "Ovi Car Mechanical": [
+    { id: 1, title: "Car Servicing", subtitle: "Regular Maintenance", image: "/Insurance.png" },
+    { id: 2, title: "MOT", subtitle: "Annual Vehicle Check", image: "/Detailing.png" },
+    { id: 3, title: "Mechanical Repairs", subtitle: "Engine & Components", image: "/Detailing.png" },
+  ],
+};
+
+const headings = Object.keys(serviceData);
 
 const ServiceSection = () => {
+  const [activeHeading, setActiveHeading] = useState(headings[0]);
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
@@ -21,28 +31,41 @@ const ServiceSection = () => {
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      {/* ✅ Grid layout wrapper */}
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-start">
-        {/* Left content (Sticky only on desktop/tablet) */}
-        <div className="self-start lg:sticky lg:top-24 lg:h-fit">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white uppercase">
-            Ovi Car Body Repair{" "}
-            <span className="text-[#D70C09]">Since 2012</span>
-          </h2>
+        {/* Left content */}
+        <div className="self-start lg:sticky lg:top-24 lg:h-fit space-y-6">
+          <div className="flex flex-col gap-4">
+            {headings.map((heading) => (
+              <div key={heading}>
+                <h2
+                  className={`text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight uppercase cursor-pointer transition-colors duration-300 ${
+                    activeHeading === heading ? "text-[#D70C09]" : "text-white"
+                  }`}
+                  onClick={() => setActiveHeading(heading)}
+                >
+                  {heading}
+                </h2>
+                {/* Only show "Since 2012" under Mechanical heading */}
+                {activeHeading === heading && heading === "Ovi Car Mechanical" && (
+                  <span className="text-[#D70C09] uppercase font-semibold text-sm sm:text-base">
+                    Since 2012
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+
           <p className="mt-4 text-[#868386] max-w-md leading-relaxed text-sm sm:text-base">
             With over 28 years of experience, we provide high-quality repairs,
             resprays, and dent removal with unmatched precision and fast
             turnaround — trusted by Sheffield drivers for reliability and
             excellence.
           </p>
-          {/* <button className="mt-8 bg-[#D70C09] text-white font-bold px-6 py-3 rounded-md uppercase hover:bg-[#868386] transition-all text-sm sm:text-base">
-            Read More
-          </button> */}
         </div>
 
         {/* Right Services List */}
         <div className="flex flex-col gap-8 relative">
-          {services.map((service) => (
+          {serviceData[activeHeading].map((service) => (
             <div
               key={service.id}
               className="flex flex-col sm:flex-row sm:justify-between sm:items-center transition-all duration-300 ease-out border-b border-[#1C1C1C] pb-6"
@@ -58,9 +81,7 @@ const ServiceSection = () => {
                 >
                   <span
                     className={`mr-2 sm:mr-3 text-[22px] sm:text-[26px] md:text-[28px] font-bold transition-colors ${
-                      hoveredId === service.id
-                        ? "text-[#D70C09]"
-                        : "text-[#868386]"
+                      hoveredId === service.id ? "text-[#D70C09]" : "text-[#868386]"
                     }`}
                   >
                     {service.id}
@@ -69,9 +90,7 @@ const ServiceSection = () => {
                 </h3>
                 <p
                   className={`uppercase font-semibold text-xs sm:text-sm mt-1 transition-colors ${
-                    hoveredId === service.id
-                      ? "text-[#D70C09]"
-                      : "text-[#868386]"
+                    hoveredId === service.id ? "text-[#D70C09]" : "text-[#868386]"
                   }`}
                 >
                   {service.subtitle}
