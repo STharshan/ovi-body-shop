@@ -42,7 +42,7 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12 font-['Orbitron',sans-serif]"
+      className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12 font-['Poppins']"
     >
       {/* 🔥 Red Gradient Glow (Same as Testimonials Section) */}
       <div className="absolute inset-0 pointer-events-none">

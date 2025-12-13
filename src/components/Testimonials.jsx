@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
   return (
     <section
       id="testimonials"
-      className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12"
+      className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12 font-['Poppins']"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

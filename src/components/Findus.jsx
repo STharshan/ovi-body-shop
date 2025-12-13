@@ -16,7 +16,7 @@ export default function FindUs() {
 
   return (
     <section
-      className="py-16 px-4 bg-black transition-colors duration-500"
+      className="py-16 px-4 bg-black transition-colors duration-500 font-['Poppins']"
       id="find-us"
     >
       <div className="max-w-6xl mx-auto text-center">

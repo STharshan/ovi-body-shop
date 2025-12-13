@@ -24,7 +24,7 @@ const ServiceSection = () => {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className="relative bg-[#000000] py-16 px-6 md:px-12 font-['Orbitron',sans-serif] text-white" id="service">
+    <section className="relative bg-[#000000] py-16 px-6 md:px-12 font-['Orbitron',sans-serif] text-white font-['Poppins']" id="service">
       {/* 🔥 Background Glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
