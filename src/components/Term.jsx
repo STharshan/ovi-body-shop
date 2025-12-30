@@ -80,7 +80,7 @@ const TermsConditions = () => {
                           <p><strong>Ovi Car Body Repair</strong></p>
                           {/* <p>Email: <a href="mailto:sam.ferries@rsmobileservices.co.uk" className="text-[#4ab8e9] hover:underline">sam.ferries@rsmobileservices.co.uk</a></p> */}
                           <p>Phone: 07788275026</p>
-                          <p>Address: 215 Attercliffe Road , Sheffield S4 7XF</p>
+                          <p>Address: 1 Sheaf Bank, Lowfield, Sheffield S2 3DA, United Kingdom</p>
                       </div>
                   </section>
               </div>
