@@ -1,21 +1,11 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const HeroSection = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-      easing: "ease-out-cubic",
-    });
-  }, []);
-
+  // Smooth scroll function
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      const offsetTop = section.offsetTop - 80;
+      const offsetTop = section.offsetTop - 80; // adjust for navbar
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
@@ -71,7 +61,7 @@ const HeroSection = () => {
           Ovi Car Body Repair has been delivering top-quality spray booth and repair services in Sheffield since 2012.
         </p>
 
-        {/* BUTTONS (NO AOS – NO REVEAL ANIMATION) */}
+        {/* Buttons (NO AOS – NO REVEAL ANIMATION) */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={() => scrollToSection("contact")}

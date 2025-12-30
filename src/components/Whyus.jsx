@@ -1,17 +1,7 @@
-"use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: false, // triggers again when scrolling back up
-      easing: "ease-out-cubic",
-    });
-  }, []);
 
   return (
     <section

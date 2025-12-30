@@ -1,7 +1,4 @@
-"use client";
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const testimonials = [
   {
@@ -40,14 +37,6 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [paused, setPaused] = useState(false);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-      once: false,
-    });
-  }, []);
 
   // ⭐ Smooth Scroll Function
   const scrollToSection = (id) => {
@@ -123,9 +112,9 @@ const TestimonialsSection = () => {
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row1-${i}`}
-            className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex flex-col justify-between flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 w-[360px] h-[340px]"
+            className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex flex-col justify-between shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 w-[360px] h-[340px]"
           >
-            <p className="italic text-[#CCCCCC] text-[15px] leading-relaxed line-clamp-[8] overflow-hidden">
+            <p className="italic text-[#CCCCCC] text-[15px] leading-relaxed line-clamp-8 overflow-hidden">
               “{item.quote}”
             </p>
             <div className="flex items-center gap-3 mt-6">
@@ -153,9 +142,9 @@ const TestimonialsSection = () => {
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row2-${i}`}
-            className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex flex-col justify-between flex-shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 w-[340px] h-[320px]"
+            className="bg-[#0E0E0E] border border-[#1C1C1C] rounded-2xl p-6 flex flex-col justify-between shrink-0 hover:border-[#D70C09]/40 transition-all duration-300 w-[340px] h-80"
           >
-            <p className="italic text-[#CCCCCC] text-[15px] leading-relaxed line-clamp-[8] overflow-hidden">
+            <p className="italic text-[#CCCCCC] text-[15px] leading-relaxed line-clamp-8 overflow-hidden">
               “{item.quote}”
             </p>
             <div className="flex items-center gap-3 mt-6">
@@ -174,8 +163,8 @@ const TestimonialsSection = () => {
       </div>
 
       {/* Edge Fade */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent pointer-events-none"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent pointer-events-none"></div>
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r from-[#000000] to-transparent pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-linnear-to-l from-[#000000] to-transparent pointer-events-none"></div>
 
       {/* Animation Keyframes */}
       <style>{`

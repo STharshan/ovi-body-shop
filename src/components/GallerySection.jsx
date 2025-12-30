@@ -1,18 +1,7 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import CircularGallery from "./CircularGallery";
 
 export default function GallerySection() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      easing: "ease-out-cubic",
-    });
-  }, []);
-
   // ⭐ Smooth Scroll Function
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -48,7 +37,7 @@ export default function GallerySection() {
       id="gallery"
       className="relative overflow-hidden bg-[#000000] text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
     >
-      {/* Glow */}
+      {/* Glow Effect */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
 

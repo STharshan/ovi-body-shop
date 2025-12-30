@@ -1,22 +1,9 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { Home, Phone, Mail } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const ContactSection = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 900,
-      easing: "ease-out-cubic",
-      once: false,
-    });
-  }, []);
-
-  // 📌 WhatsApp number
   const whatsappNumber = "447788275026";
 
-  // 📌 Form Submit → Send to WhatsApp
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -40,12 +27,12 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#000000] text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
+      className="relative overflow-hidden bg-black text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3" />
       </div>
 
       {/* Content */}
@@ -68,15 +55,13 @@ const ContactSection = () => {
               <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full">
                 <Home className="w-5 h-5" />
               </div>
-
               <div>
-                <h4 className="font-semibold text-white mb-1">Office Address</h4>
-
+                <h4 className="font-semibold mb-1">Office Address</h4>
                 <a
                   href="https://maps.app.goo.gl/bGAHxiqBYfqTL37SA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-[#868386] hover:underline hover:text-white"
+                  className="text-sm text-[#868386] hover:text-white hover:underline"
                 >
                   1 Sheaf Bank, Lowfield <br />
                   Sheffield S2 3DA <br />
@@ -85,38 +70,42 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Phone - WhatsApp */}
-            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="150">
+            {/* Phone */}
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full">
                 <Phone className="w-5 h-5" />
               </div>
-
               <div>
-                <h4 className="font-semibold text-white mb-1">Contact Number</h4>
-
+                <h4 className="font-semibold mb-1">Contact Number</h4>
                 <a
                   href="https://wa.me/447788275026"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm hover:underline text-[#D70C09] hover:text-white"
+                  className="text-sm text-[#D70C09] hover:text-white hover:underline"
                 >
                   +44 7788 275026 (WhatsApp)
                 </a>
               </div>
             </div>
 
-            {/* Email - mailto: */}
-            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="250">
+            {/* Email */}
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
               <div className="p-3 bg-[#D70C09]/15 text-[#D70C09] rounded-full">
                 <Mail className="w-5 h-5" />
               </div>
-
               <div>
-                <h4 className="font-semibold text-white mb-1">Email Address</h4>
-
+                <h4 className="font-semibold mb-1">Email Address</h4>
                 <a
                   href="mailto:vanyek_bogdan@yahoo.com"
-                  className="text-sm text-[#868386] hover:underline hover:text-white"
+                  className="text-sm text-[#868386] hover:text-white hover:underline"
                 >
                   vanyek_bogdan@yahoo.com
                 </a>
@@ -136,7 +125,9 @@ const ContactSection = () => {
 
           <p className="text-[#868386] text-sm mb-10">
             We're always here to assist you at{" "}
-            <span className="text-[#D70C09] font-semibold">Ovi Car Body Repair</span>.
+            <span className="text-[#D70C09] font-semibold">
+              Ovi Car Body Repair
+            </span>.
           </p>
 
           {/* WhatsApp Form */}
@@ -149,7 +140,7 @@ const ContactSection = () => {
                   name="name"
                   required
                   placeholder="Your name"
-                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386]"
+                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386] focus:outline-none focus:border-[#D70C09]"
                 />
               </div>
 
@@ -160,7 +151,7 @@ const ContactSection = () => {
                   name="email"
                   required
                   placeholder="example@gmail.com"
-                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386]"
+                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386] focus:outline-none focus:border-[#D70C09]"
                 />
               </div>
             </div>
@@ -173,7 +164,7 @@ const ContactSection = () => {
                   name="phone"
                   required
                   placeholder="Phone number"
-                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386]"
+                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386] focus:outline-none focus:border-[#D70C09]"
                 />
               </div>
 
@@ -184,7 +175,7 @@ const ContactSection = () => {
                   name="subject"
                   required
                   placeholder="Subject"
-                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386]"
+                  className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386] focus:outline-none focus:border-[#D70C09]"
                 />
               </div>
             </div>
@@ -196,8 +187,8 @@ const ContactSection = () => {
                 rows="4"
                 required
                 placeholder="Your message..."
-                className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386]"
-              ></textarea>
+                className="w-full bg-transparent border border-[#1C1C1C] rounded-md p-3 text-white placeholder-[#868386] focus:outline-none focus:border-[#D70C09]"
+              />
             </div>
 
             <button
@@ -206,7 +197,12 @@ const ContactSection = () => {
             >
               Send Message (WhatsApp)
             </button>
-            <p class="text-xs text-center text-white" >By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
+
+            <p className="text-xs text-center text-white">
+              By submitting this form, you agree to us processing your details to
+              respond to your enquiry. Your information is handled securely and
+              in line with our Privacy Policy.
+            </p>
           </form>
         </div>
       </div>

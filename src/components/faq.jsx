@@ -1,8 +1,5 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const faqs = [
   {
@@ -34,10 +31,6 @@ const faqs = [
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState(null);
-
-  useEffect(() => {
-    AOS.init({ duration: 800, once: false });
-  }, []);
 
   return (
     <section
@@ -123,8 +116,8 @@ export default function FaqSection() {
       </div>
 
       {/* Edge Fades for Smooth Depth */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent pointer-events-none"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent pointer-events-none"></div>
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r from-[#000000] to-transparent pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-linear-to-l from-[#000000] to-transparent pointer-events-none"></div>
     </section>
   );
 }
