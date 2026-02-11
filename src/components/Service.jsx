@@ -27,7 +27,7 @@ const ServiceSection = () => {
 
   return (
     <section className="relative bg-[#000000] py-16 px-6 md:px-12 text-white font-['Poppins']" id="service">
-      {/* 🔥 Background Glow */}
+      {/*  Background Glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>
@@ -77,12 +77,12 @@ const ServiceSection = () => {
               <div className="flex-1">
                 <h3
                   className={`text-[20px] sm:text-[22px] md:text-[24px] font-bold uppercase tracking-wide transition-colors duration-300 ${
-                    hoveredId === service.id ? "text-[#D70C09]" : "text-white"
+                    hoveredId === service.id ? "" : "text-white"
                   }`}
                 >
                   <span
                     className={`mr-2 sm:mr-3 text-[22px] sm:text-[26px] md:text-[28px] font-bold transition-colors ${
-                      hoveredId === service.id ? "text-[#D70C09]" : "text-[#868386]"
+                      hoveredId === service.id ? "" : "text-[#868386]"
                     }`}
                   >
                     {service.id}
@@ -102,7 +102,7 @@ const ServiceSection = () => {
                   onClick={() => navigate(service.path)}
                   className={`mt-3 px-4 py-2 rounded-md font-semibold uppercase text-sm sm:text-base transition-all duration-300 ${
                     hoveredId === service.id
-                      ? "bg-[#D70C09] text-black shadow-lg scale-105"
+                      ? "bg-[#D70C09] text-white shadow-lg scale-105"
                       : "bg-transparent border border-[#D70C09] text-[#D70C09] hover:bg-[#D70C09] hover:text-black"
                   }`}
                 >

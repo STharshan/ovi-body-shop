@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 const PRIMARY_COLOR = "#D70C09";
 
@@ -38,7 +39,7 @@ export default function HeroSection({ data }) {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            
+
             {/* Call Button */}
             <a href={`tel:${data.phone}`} className="w-full sm:w-auto">
               <button
@@ -54,7 +55,9 @@ export default function HeroSection({ data }) {
             <button
               className="w-full sm:w-auto flex justify-center items-center gap-2 h-12 sm:h-11 rounded-md px-6 font-semibold border border-[#D70C09] text-[#D70C09] hover:bg-[#D70C09] hover:text-white transition-all duration-300"
             >
-              Get Free Quote
+              <HashLink to="/#contact" smooth>
+                Get Free Quote
+              </HashLink>
             </button>
 
           </div>
