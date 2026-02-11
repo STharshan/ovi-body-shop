@@ -98,6 +98,96 @@ const Servicesterm = {
         desc: "Thorough inspection to ensure factory-level finish and alignment",
       },
     ],
+  },
+
+  AdditionalMaintenanceService: {
+    title: "Additional Maintenance Services",
+    subtitle:
+      "Professional maintenance services to keep every component of your vehicle in top condition.",
+    services: [
+      {
+        title: "Brake Inspection & Replacement",
+        desc: "Ensure brakes are in perfect condition for safety and performance.",
+      },
+      {
+        title: "Oil & Filter Changes",
+        desc: "Regular engine oil and filter replacements to maintain engine health.",
+      },
+      {
+        title: "Air Conditioning Service & Regas",
+        desc: "Keep your AC system efficient, cool, and comfortable.",
+      },
+      {
+        title: "Battery Testing & Replacement",
+        desc: "Professional battery checks and replacements to avoid unexpected failures.",
+      },
+      {
+        title: "Tyre Rotation & Pressure Checks",
+        desc: "Maximise tyre life and ensure optimal driving safety.",
+      },
+      {
+        title: "Steering & Suspension Inspection",
+        desc: "Maintain smooth handling and vehicle stability through expert checks.",
+      },
+    ],
+  },
+  MOTPreTestService: {
+    title: "MOT Preparation & Pre-Test Checks",
+    subtitle:
+      "Professional pre-MOT inspections to maximise your chances of passing the first time.",
+    services: [
+      {
+        title: "Pre-MOT Health Check",
+        desc: "Comprehensive inspection to ensure your vehicle is ready for MOT.",
+      },
+      {
+        title: "Minor Repairs & Adjustments",
+        desc: "Fix small issues that could cause MOT failure before the test.",
+      },
+      {
+        title: "Bulb, Wiper & Tyre Replacement",
+        desc: "Replace worn or faulty bulbs, wipers, and tyres for safety compliance.",
+      },
+      {
+        title: "Brake & Suspension Repairs",
+        desc: "Professional repairs to brakes and suspension to meet MOT standards.",
+      },
+      {
+        title: "Emissions Fault Diagnosis",
+        desc: "Identify and correct emissions-related issues to pass MOT tests.",
+      },
+    ],
+  },
+  AdditionalMechanicalServices: {
+    title: "Additional Mechanical Services",
+    subtitle:
+      "Professional mechanical maintenance and repair services for all vehicle systems.",
+    services: [
+      {
+        title: "Exhaust System Repair & Replacement",
+        desc: "Expert repair and replacement to maintain proper emissions and performance.",
+      },
+      {
+        title: "Cooling System & Radiator Repairs",
+        desc: "Prevent overheating with professional radiator and cooling system maintenance.",
+      },
+      {
+        title: "Battery & Charging System Repairs",
+        desc: "Ensure reliable starting and electrical performance with battery and charging system service.",
+      },
+      {
+        title: "Fuel System Diagnostics",
+        desc: "Identify and fix fuel system issues for optimal engine efficiency.",
+      },
+      {
+        title: "Electrical & Sensor Fault Repairs",
+        desc: "Professional diagnostics and repair for all vehicle electrical and sensor issues.",
+      },
+      {
+        title: "Air Conditioning Mechanical Repairs",
+        desc: "Maintain comfort and performance with AC mechanical repair services.",
+      },
+    ],
   }
 
 };

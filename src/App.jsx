@@ -17,6 +17,10 @@ import AccidentRepair from "./page/AccidentRepairs";
 import Dent from "./page/Dent";
 import PaintResprays from "./page/PaintResprays";
 import PanelBeating from "./page/PanelBeating";
+import ScrollToHash from "./components/ScrollToHash";
+import CarService from "./page/CarService";
+import MOT from "./page/MOT";
+import Mechanical from "./page/Mechanical";
 
 function AOSWrapper() {
   const location = useLocation();
@@ -41,6 +45,7 @@ function App() {
   return (
     <Router>
       <AOSWrapper />
+      <ScrollToHash />
       <ScrollToTop />
       <Navbar />
 
@@ -52,6 +57,9 @@ function App() {
         <Route path="dent" element={<Dent />} />
         <Route path="/paint-respray" element={<PaintResprays />} />
         <Route path="/panel-beating" element={<PanelBeating />} />
+        <Route path="/car-servicing" element={<CarService />} />
+        <Route path="mot" element={<MOT />} />
+        <Route path="/mechanical-repairs" element={<Mechanical />} />
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>

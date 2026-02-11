@@ -280,6 +280,151 @@ const MainServices = {
       },
     ],
   },
+  CarServicing: {
+    title: "Professional Car Servicing",
+    subtitle:
+      "Expert vehicle maintenance solutions designed to improve performance, extend engine life, and prevent costly breakdowns.",
+    services: [
+      {
+        title: "Interim Car Service",
+        desc: "Basic maintenance checks ideal for high-mileage drivers or frequent city use.",
+        highlights: [
+          "Engine oil and filter change",
+          "Brake and tyre inspection",
+          "Fluid level top-ups",
+          "Safety and visual checks",
+        ],
+      },
+      {
+        title: "Full Car Service",
+        desc: "Comprehensive servicing recommended annually or every 12,000 miles.",
+        highlights: [
+          "Engine oil and filter replacement",
+          "Air and cabin filter replacement",
+          "Brake system inspection",
+          "Steering and suspension checks",
+          "Battery and charging system test",
+        ],
+      },
+      {
+        title: "Major Car Service",
+        desc: "In-depth servicing for long-term vehicle health and performance.",
+        highlights: [
+          "Spark plug or fuel filter replacement",
+          "Transmission and drivetrain checks",
+          "Timing belt/chain inspection",
+          "Comprehensive engine diagnostics",
+          "Complete fluid replacement",
+        ],
+      },
+      {
+        title: "Engine Diagnostics & Health Check",
+        desc: "Advanced diagnostic testing to identify faults and optimise performance.",
+        highlights: [
+          "Computerised fault code scanning",
+          "Engine performance analysis",
+          "Emissions and sensor checks",
+          "Preventative maintenance recommendations",
+        ],
+      },
+    ],
+  },
+  MOTTesting: {
+    title: "Professional MOT Testing",
+    subtitle:
+      "Comprehensive MOT inspections designed to assess vehicle safety, emissions, and roadworthiness in accordance with DVSA regulations.",
+    services: [
+      {
+        title: "Safety System Inspection",
+        desc: "Thorough checks of all critical safety components to ensure your vehicle is safe to drive.",
+        highlights: [
+          "Brakes and brake system checks",
+          "Steering and suspension inspection",
+          "Seat belts and airbags inspection",
+          "Lights, indicators, and horn testing",
+        ],
+      },
+      {
+        title: "Emissions & Environmental Checks",
+        desc: "Ensuring your vehicle meets required emissions standards.",
+        highlights: [
+          "Exhaust emissions testing",
+          "Diesel smoke test",
+          "Exhaust system inspection",
+          "Catalytic converter and DPF checks",
+        ],
+      },
+      {
+        title: "Structural & Body Condition Check",
+        desc: "Inspection of the vehicle’s structure and bodywork for safety and integrity.",
+        highlights: [
+          "Chassis and structural corrosion checks",
+          "Body condition and sharp edge inspection",
+          "Underbody and mounting point checks",
+          "Fuel system and tank inspection",
+        ],
+      },
+      {
+        title: "Tyres, Wheels & Visibility",
+        desc: "Ensuring safe contact with the road and clear driver visibility.",
+        highlights: [
+          "Tyre tread depth and condition",
+          "Wheel security and alignment checks",
+          "Windscreen and wiper inspection",
+          "Mirrors and driver visibility checks",
+        ],
+      },
+    ],
+  },
+  MechanicalRepairs: {
+    title: "Professional Mechanical Repairs",
+    subtitle:
+      "Expert mechanical repair solutions designed to keep your vehicle running efficiently, safely, and reliably.",
+    services: [
+      {
+        title: "Engine Repairs & Maintenance",
+        desc: "Professional engine repair services to restore power, efficiency, and reliability.",
+        highlights: [
+          "Engine fault diagnosis and repair",
+          "Timing belt and chain replacement",
+          "Oil leaks and gasket repairs",
+          "Turbocharger and fuel system repairs",
+        ],
+      },
+      {
+        title: "Brake System Repairs",
+        desc: "Complete brake system inspection and repair for maximum stopping power and safety.",
+        highlights: [
+          "Brake pads and disc replacement",
+          "Brake fluid flush and bleeding",
+          "Calliper and brake line repairs",
+          "ABS system diagnostics",
+        ],
+      },
+      {
+        title: "Suspension & Steering Repairs",
+        desc: "Restoring ride comfort, handling, and vehicle stability.",
+        highlights: [
+          "Shock absorbers and spring replacement",
+          "Bushes, ball joints, and control arms",
+          "Power steering repairs",
+          "Wheel alignment and handling checks",
+        ],
+      },
+      {
+        title: "Transmission & Clutch Repairs",
+        desc: "Expert repair and maintenance for manual and automatic transmissions.",
+        highlights: [
+          "Clutch replacement and adjustment",
+          "Gearbox diagnostics and repair",
+          "Automatic transmission servicing",
+          "Drivetrain and differential repairs",
+        ],
+      },
+    ],
+  }
+
+
 };
 
 export default MainServices;
