@@ -11,6 +11,8 @@ import GDPRConsent from "./components/GDPRButton";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./page/Home";
 
+import Detailing from "./page/Detailing";
+
 function AOSWrapper() {
   const location = useLocation();
 
@@ -39,6 +41,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/detailing" element={<Detailing />} />
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>

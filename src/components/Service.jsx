@@ -23,7 +23,7 @@ const ServiceSection = () => {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className="relative bg-[#000000] py-16 px-6 md:px-12  text-white font-['Poppins']" id="service">
+    <section className="relative bg-[#000000] py-16 px-6 md:px-12 text-white font-['Poppins']" id="service">
       {/* 🔥 Background Glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
@@ -44,7 +44,6 @@ const ServiceSection = () => {
                 >
                   {heading}
                 </h2>
-                {/* Only show "Since 2012" under Mechanical heading */}
                 {activeHeading === heading && heading === "Ovi Car Mechanical" && (
                   <span className="text-[#D70C09] uppercase font-semibold text-sm sm:text-base">
                     Since 2012
@@ -72,7 +71,7 @@ const ServiceSection = () => {
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Text */}
-              <div>
+              <div className="flex-1">
                 <h3
                   className={`text-[20px] sm:text-[22px] md:text-[24px] font-bold uppercase tracking-wide transition-colors duration-300 ${
                     hoveredId === service.id ? "text-[#D70C09]" : "text-white"
@@ -94,6 +93,17 @@ const ServiceSection = () => {
                 >
                   {service.subtitle}
                 </p>
+
+                {/* Learn More Button */}
+                <button
+                  className={`mt-3 px-4 py-2 rounded-md font-semibold uppercase text-sm sm:text-base transition-all duration-300 ${
+                    hoveredId === service.id
+                      ? "bg-[#D70C09] text-black shadow-lg scale-105"
+                      : "bg-transparent border border-[#D70C09] text-[#D70C09] hover:bg-[#D70C09] hover:text-black"
+                  }`}
+                >
+                  Learn More
+                </button>
               </div>
 
               {/* Image */}
