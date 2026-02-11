@@ -56,6 +56,7 @@ const WhyChoose = {
       "Steering or handling issues post-accident",
     ],
   },
+
   WhyChooseDentScratch: {
     title: "Why Choose Professional Dent & Scratch Repair?",
     subtitle: "Quick, precise repairs save time, money, and protect your vehicle’s value. Our experienced technicians restore your car to a like-new condition with attention to detail.",
@@ -74,7 +75,9 @@ const WhyChoose = {
       "Surface imperfections affecting appearance",
       "Recent minor accidents or parking mishaps",
     ],
-  }, WhyChoosePaintRespray: {
+  }, 
+  
+  WhyChoosePaintRespray: {
     title: "Why Choose Professional Paint Resprays?",
     subtitle: "A professional respray improves appearance, protects the bodywork, and maintains vehicle value. Our Blowtherm technology ensures precise results and long-lasting protection.",
     benefits: [
@@ -92,7 +95,8 @@ const WhyChoose = {
       "Visible paint bubbles or peeling",
       "After an accident or minor collision",
     ],
-  }, WhyChoosePanelBeating: {
+  }, 
+  WhyChoosePanelBeating: {
     title: "Why Choose Professional Panel Beating & Bodywork Restoration?",
     subtitle: "Professional body repair is essential to maintain vehicle safety, appearance, and value. Our skilled technicians use proven techniques and attention to detail to ensure every repair meets the highest standards.",
     benefits: [

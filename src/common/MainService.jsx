@@ -37,10 +37,12 @@ export default function MainService({ data }) {
                 {service.desc}
               </p>
 
-              <div className="flex items-center text-sm text-[#D70C09] mt-2">
-                <FaRegCheckCircle className="mr-2" />
-                Professional service guaranteed
-              </div>
+              {service.highlights.map((item, i) => (
+                <div key={i} className="flex items-center gap-2 text-sm">
+                  <FaRegCheckCircle className={`mr-2 text-[#D70C09]`} />
+                  <span className="text-gray-300">{item}</span>
+                </div>
+              ))}
             </div>
           ))}
         </div>

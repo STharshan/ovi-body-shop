@@ -12,7 +12,8 @@ const ServiceHero = {
         highlight: "Claim Support",
         description: "Hassle-free insurance repair services with expert claim support. We handle your vehicle repairs from start to finish, working directly with insurers to ensure smooth, stress-free processing.",
         phone: "+441623623759"
-    }, AccidentHero: {
+    }, 
+    AccidentHero: {
         badgeText: "Certified Body Shop",
         title: "Accident Repairs –",
         highlight: "Minor to Major Damage",
@@ -32,7 +33,8 @@ const ServiceHero = {
         highlight: "Paint Resprays",
         description: "High-quality paint resprays using advanced Blowtherm technology for a flawless, durable finish. Restore your vehicle’s original shine and colour with precision painting and expert surface preparation.",
         phone: "+441623623759"
-    }, BodyworkHero: {
+    }, 
+    PanelBeatingHero: {
         badgeText: "Expert Craftsmanship",
         title: "Panel Beating &",
         highlight: "Bodywork Restoration",

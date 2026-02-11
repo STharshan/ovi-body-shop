@@ -12,6 +12,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./page/Home";
 
 import Detailing from "./page/Detailing";
+import InsuranceJob from "./page/InsuranceJob";
+import AccidentRepair from "./page/AccidentRepairs";
+import Dent from "./page/Dent";
+import PaintResprays from "./page/PaintResprays";
+import PanelBeating from "./page/PanelBeating";
 
 function AOSWrapper() {
   const location = useLocation();
@@ -42,6 +47,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/detailing" element={<Detailing />} />
+        <Route path="/insurance-job" element={<InsuranceJob />} />
+        <Route path="/accident-repair" element={<AccidentRepair />} />
+        <Route path="dent" element={<Dent />} />
+        <Route path="/paint-respray" element={<PaintResprays />} />
+        <Route path="/panel-beating" element={<PanelBeating />} />
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>

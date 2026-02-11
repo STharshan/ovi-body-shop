@@ -1,18 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const serviceData = {
   "Ovi Car Body Repair": [
-    { id: 1, title: "Panel Beating", subtitle: "Bodywork Restoration", image: "/Panel.png" },
-    { id: 2, title: "Paint Resprays", subtitle: "Blowtherm Technology", image: "/Paint.png" },
-    { id: 3, title: "Dent & Scratch Repair", subtitle: "24-Hour Turnaround", image: "/Dent.png" },
-    { id: 4, title: "Accident Repairs", subtitle: "Minor to Major Damage", image: "/Accident.png" },
-    { id: 5, title: "Insurance Jobs", subtitle: "Claim Support", image: "/Insurance.png" },
-    { id: 6, title: "Detailing", subtitle: "Polish & Finishing", image: "/Detailing.png" },
+    { id: 1, title: "Panel Beating", subtitle: "Bodywork Restoration", image: "/Panel.png", path: "/panel-beating" },
+    { id: 2, title: "Paint Resprays", subtitle: "Blowtherm Technology", image: "/Paint.png", path: "/paint-respray" },
+    { id: 3, title: "Dent & Scratch Repair", subtitle: "24-Hour Turnaround", image: "/Dent.png", path: "/dent" },
+    { id: 4, title: "Accident Repairs", subtitle: "Minor to Major Damage", image: "/Accident.png", path: "/accident-repair" },
+    { id: 5, title: "Insurance Jobs", subtitle: "Claim Support", image: "/Insurance.png", path: "/insurance-job" },
+    { id: 6, title: "Detailing", subtitle: "Polish & Finishing", image: "/Detailing.png", path: "/detailing" },
   ],
   "Ovi Car Mechanical": [
-    { id: 1, title: "Car Servicing", subtitle: "Regular Maintenance", image: "/Insurance.png" },
-    { id: 2, title: "MOT", subtitle: "Annual Vehicle Check", image: "/Detailing.png" },
-    { id: 3, title: "Mechanical Repairs", subtitle: "Engine & Components", image: "/Detailing.png" },
+    { id: 1, title: "Car Servicing", subtitle: "Regular Maintenance", image: "/Insurance.png", path: "/car-servicing" },
+    { id: 2, title: "MOT", subtitle: "Annual Vehicle Check", image: "/Detailing.png", path: "/mot" },
+    { id: 3, title: "Mechanical Repairs", subtitle: "Engine & Components", image: "/Detailing.png", path: "/mechanical-repairs" },
   ],
 };
 
@@ -21,6 +22,8 @@ const headings = Object.keys(serviceData);
 const ServiceSection = () => {
   const [activeHeading, setActiveHeading] = useState(headings[0]);
   const [hoveredId, setHoveredId] = useState(null);
+
+  const navigate = useNavigate();
 
   return (
     <section className="relative bg-[#000000] py-16 px-6 md:px-12 text-white font-['Poppins']" id="service">
@@ -96,6 +99,7 @@ const ServiceSection = () => {
 
                 {/* Learn More Button */}
                 <button
+                  onClick={() => navigate(service.path)}
                   className={`mt-3 px-4 py-2 rounded-md font-semibold uppercase text-sm sm:text-base transition-all duration-300 ${
                     hoveredId === service.id
                       ? "bg-[#D70C09] text-black shadow-lg scale-105"

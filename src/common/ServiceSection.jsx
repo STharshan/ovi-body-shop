@@ -23,7 +23,7 @@ export default function ServiceSection({ data }) {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.services.map((s, i) => (
             <div
               key={i}
