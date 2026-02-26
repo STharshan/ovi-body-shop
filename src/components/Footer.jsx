@@ -36,22 +36,23 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h3 className="font-bold mb-4 text-[#D70C09]">Services</h3>
+
             <ul className="space-y-2 text-gray-400">
               {[
-                "Panel Beating",
-                "Paint Respray",
-                "Dent & Scratch Repair",
-                "Accident Repairs",
-                "Insurance Jobs",
-                "Detailing",
+                { name: "Panel Beating", path: "/panel-beating" },
+                { name: "Paint Respray", path: "/paint-respray" },
+                { name: "Dent & Scratch Repair", path: "/dent" },
+                { name: "Accident Repairs", path: "/accident-repair" },
+                { name: "Insurance Jobs", path: "/insurance-job" },
+                { name: "Detailing", path: "/detailing" },
               ].map((service, index) => (
                 <li key={index}>
                   <HashLink
                     smooth
-                    to="/#service"
+                    to={service.path}
                     className="hover:text-white transition-colors duration-300"
                   >
-                    {service}
+                    {service.name}
                   </HashLink>
                 </li>
               ))}
@@ -98,7 +99,7 @@ export default function Footer() {
 
         {/* Bottom Divider */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Ovi Car Body Repair. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ovi Car Body Repair. All rights reserved.</p>
         </div>
 
         {/* Bottom Bar */}

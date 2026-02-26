@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center cursor-pointer">
           <HashLink smooth to="/#home" className="h-14 w-auto">
-            <img src="/logo.png" alt="CARSY Logo" className="h-14 w-auto object-contain" />
+            <img src="/logo.png" alt="Logo" className="h-14 w-auto object-contain" />
           </HashLink>
         </div>
 

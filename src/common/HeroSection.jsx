@@ -41,24 +41,23 @@ export default function HeroSection({ data }) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
 
             {/* Call Button */}
-            <a href={`tel:${data.phone}`} className="w-full sm:w-auto">
-              <button
-                className="w-full sm:w-auto flex justify-center items-center gap-2 h-12 sm:h-11 rounded-md px-6 font-semibold text-white transition-all duration-300 hover:opacity-90"
-                style={{ backgroundColor: PRIMARY_COLOR }}
-              >
-                <FaPhoneAlt className="h-5 w-5" />
-                Book Service {data.phone}
-              </button>
+            <a
+              href={`tel:${data.phone}`}
+              className="w-full sm:w-auto flex justify-center items-center gap-2 h-12 sm:h-11 rounded-md px-6 font-semibold text-white transition-all duration-300 hover:opacity-90"
+              style={{ backgroundColor: PRIMARY_COLOR }}
+            >
+              <FaPhoneAlt className="h-5 w-5" />
+              Book Service {data.phone}
             </a>
 
             {/* Quote Button */}
-            <button
+            <div
               className="w-full sm:w-auto flex justify-center items-center gap-2 h-12 sm:h-11 rounded-md px-6 font-semibold border border-[#D70C09] text-[#D70C09] hover:bg-[#D70C09] hover:text-white transition-all duration-300"
             >
               <HashLink to="/#contact" smooth>
                 Get Free Quote
               </HashLink>
-            </button>
+            </div>
 
           </div>
         </div>
