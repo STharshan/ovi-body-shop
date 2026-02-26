@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const HeroSection = () => {
   // Smooth scroll function

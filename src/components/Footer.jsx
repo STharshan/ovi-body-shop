@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaEnvelope, FaFacebookF, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 

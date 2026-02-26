@@ -44,7 +44,6 @@ const PrivacyPolicy = () => {
                     </p>
                     <ul className="list-disc ml-6 text-white">
                         <li>Respond to inquiries and provide quotes</li>
-                        <li>Deliver scaffolding services</li>
                         <li>Communicate with you about your project</li>
                         <li>Maintain business records and comply with legal requirements</li>
                     </ul>
@@ -111,7 +110,7 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="text-white">
                         <p><strong>Ovi Car Body Repair</strong></p>
-                        {/* <p>Email: <a href="mailto:sam.ferries@rsmobileservices.co.uk" className="text-[#4ab8e9] hover:underline">sam.ferries@rsmobileservices.co.uk</a></p> */}
+                        <p>Email: <a href="mailto:vanyek_bogdan@yahoo.com" className="text-[#4ab8e9] hover:underline">vanyek_bogdan@yahoo.com</a></p>
                         <p>Phone: 07788275026</p>
                         <p>Address: 1 Sheaf Bank, Lowfield, Sheffield S2 3DA, United Kingdom</p>
                     </div>

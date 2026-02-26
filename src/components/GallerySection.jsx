@@ -1,4 +1,4 @@
-import React from "react";
+
 import CircularGallery from "./CircularGallery";
 
 export default function GallerySection() {

@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const ACCENT_COLOR = "#D70C09";
 
