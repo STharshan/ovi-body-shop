@@ -11,7 +11,6 @@ import GDPRConsent from "./components/GDPRButton";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./page/Home";
 
-import Detailing from "./page/Detailing";
 import InsuranceJob from "./page/InsuranceJob";
 import AccidentRepair from "./page/AccidentRepairs";
 import Dent from "./page/Dent";
@@ -48,7 +47,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/detailing" element={<Detailing />} />
         <Route path="/insurance-job" element={<InsuranceJob />} />
         <Route path="/accident-repair" element={<AccidentRepair />} />
         <Route path="/dent" element={<Dent />} />

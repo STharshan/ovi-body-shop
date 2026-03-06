@@ -44,7 +44,6 @@ export default function Footer() {
                 { name: "Dent & Scratch Repair", path: "/dent" },
                 { name: "Accident Repairs", path: "/accident-repair" },
                 { name: "Insurance Jobs", path: "/insurance-job" },
-                { name: "Detailing", path: "/detailing" },
               ].map((service, index) => (
                 <li key={index}>
                   <HashLink

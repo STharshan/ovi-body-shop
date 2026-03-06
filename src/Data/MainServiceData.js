@@ -1,50 +1,4 @@
 const MainServices = {
-  MainDetailingService: {
-    title: "Professional Detailing Services",
-    subtitle: "Comprehensive detailing to enhance your vehicle’s look, longevity, and value",
-    services: [
-      {
-        title: "Exterior Detailing",
-        desc: "Expert cleaning, polishing, and protection of the car exterior",
-        highlights: [
-          "Paint correction and polishing",
-          "Scratch and swirl removal",
-          "Waxing and sealant application",
-          "Restores glossy, showroom finish",
-        ],
-      },
-      {
-        title: "Interior Detailing",
-        desc: "Thorough cleaning and care for the vehicle interior",
-        highlights: [
-          "Deep vacuuming and carpet shampoo",
-          "Upholstery cleaning and conditioning",
-          "Dashboard, console, and trim detailing",
-          "Odour elimination",
-        ],
-      },
-      {
-        title: "Wheel & Tyre Care",
-        desc: "Professional cleaning and finishing of wheels and tyres",
-        highlights: [
-          "Tyre dressing for shine and protection",
-          "Alloy wheel cleaning and polishing",
-          "Brake dust and grime removal",
-          "Complete attention to detail",
-        ],
-      },
-      {
-        title: "Protective Coatings",
-        desc: "Long-lasting protection for paint and surfaces",
-        highlights: [
-          "Ceramic or protective coatings",
-          "UV and weather protection",
-          "Maintains colour and finish",
-          "Easier cleaning and maintenance",
-        ],
-      },
-    ],
-  },
 
   MainInsuranceService: {
     title: "Professional Insurance Repair Services",
@@ -133,7 +87,7 @@ const MainServices = {
         highlights: [
           "Seamless paint blending",
           "Rust protection and corrosion prevention",
-          "Final polish and detailing",
+          "Final polish",
           "Quality assurance check",
         ],
       },

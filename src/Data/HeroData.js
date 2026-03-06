@@ -1,11 +1,4 @@
 const ServiceHero = {
-    DetailHero: {
-        badgeText: "Professional Detailing",
-        title: "Detailing –",
-        highlight: "Polish & Finishing",
-        description: "Professional vehicle detailing and finishing services to restore and protect your car’s appearance. Our expert technicians provide meticulous care for a showroom-quality shine inside and out.",
-        phone: "+44 7788 275026"
-    },
     InsuranceHero: {
         badgeText: "Insurance Approved Repairer",
         title: "Insurance Jobs –",

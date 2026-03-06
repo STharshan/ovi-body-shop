@@ -1,23 +1,4 @@
 const WhyChoose = {
-  WhyChooseDetailing: {
-    title: "Why Choose Professional Detailing?",
-    subtitle: "Detailing preserves your vehicle’s appearance, protects surfaces, and enhances value. Our experienced technicians provide meticulous care for both aesthetics and long-term maintenance.",
-    benefits: [
-      "Showroom-quality shine",
-      "Protection against fading and environmental damage",
-      "Maintains interior and exterior surfaces",
-      "Enhances resale value",
-      "Expert, detail-oriented workmanship",
-      "Comprehensive care for all vehicle types",
-    ],
-    signs: [
-      "Dull or faded paint",
-      "Dusty or stained interior surfaces",
-      "Tyres or wheels look worn or dirty",
-      "Scratches or minor imperfections visible",
-      "Want to maintain vehicle appearance and value",
-    ],
-  },
   WhyChooseInsurance: {
     title: "Why Choose Professional Insurance Jobs?",
     subtitle: "We simplify the insurance repair process so you can focus on getting back on the road. Our experienced team manages all the paperwork and repairs, ensuring your claim is processed efficiently.",

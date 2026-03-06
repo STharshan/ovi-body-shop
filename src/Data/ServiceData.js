@@ -1,23 +1,4 @@
 const Servicesterm = {
-  DetailingService: {
-    title: "Vehicle Finishing & Maintenance Services",
-    subtitle: "Meticulous attention to detail ensures lasting beauty and protection",
-    services: [
-      {
-        title: "Surface Inspection",
-        desc: "Careful check for scratches, chips, or imperfections before finishing",
-      },
-      {
-        title: "Polishing & Buffing",
-        desc: "Professional polishing for smooth, flawless surfaces",
-      },
-      {
-        title: "Final Quality Check",
-        desc: "Ensures every part of the vehicle shines and meets showroom standards",
-      },
-    ],
-  },
-
   AccidentService: {
     title: "Vehicle Safety & Finishing Services",
     subtitle: "Professional services to guarantee your car is safe, functional, and visually flawless",
@@ -68,7 +49,7 @@ const Servicesterm = {
         desc: "Advanced Blowtherm technology for faster drying and harder, more durable paint",
       },
       {
-        title: "Detailing & Polishing",
+        title: "Polishing",
         desc: "Final polish for showroom shine and smooth surface",
       },
       {
