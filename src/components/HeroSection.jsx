@@ -14,7 +14,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative w-full h-[120vh] overflow-hidden flex items-center justify-center font-['Poppins']">
+    <section id="home" className="relative w-full h-[120vh] overflow-hidden flex items-center justify-center">
       {/* Background Video */}
       <video
         autoPlay

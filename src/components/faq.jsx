@@ -35,9 +35,9 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12 font-['Poppins']"
+      className="relative overflow-hidden bg-[#000000] text-white py-24 px-6 md:px-12"
     >
-      {/* 🔥 Red Gradient Glow (Same as Testimonials Section) */}
+      {/* Red Gradient Glow (Same as Testimonials Section) */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D70C09]/30 blur-[160px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#D70C09]/20 blur-[140px] rounded-full translate-x-1/3 translate-y-1/3"></div>

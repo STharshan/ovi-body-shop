@@ -27,7 +27,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-black text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
+      className="relative overflow-hidden bg-black text-white py-24 md:py-32 border-t border-[#1A1A1A]"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none">

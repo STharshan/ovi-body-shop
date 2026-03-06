@@ -35,7 +35,7 @@ export default function GallerySection() {
   return (
     <section
       id="gallery"
-      className="relative overflow-hidden bg-[#000000] text-white font-['Poppins'] py-24 md:py-32 border-t border-[#1A1A1A]"
+      className="relative overflow-hidden bg-[#000000] text-white py-24 md:py-32 border-t border-[#1A1A1A]"
     >
       {/* Glow Effect */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>

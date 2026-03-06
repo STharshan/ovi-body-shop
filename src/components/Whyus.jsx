@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative bg-black text-white px-6 md:px-12 lg:px-24 py-20 overflow-hidden font-['Poppins']"
+      className="relative bg-black text-white px-6 md:px-12 lg:px-24 py-20 overflow-hidden "
     >
       {/* 🔥 Red Glow Background */}
       <div className="absolute inset-0 pointer-events-none -z-10">

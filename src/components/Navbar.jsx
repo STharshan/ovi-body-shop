@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <nav 
       ref={navRef} 
-      className="bg-black fixed max-w-7xl p-3 mx-auto text-white tracking-wide top-3 rounded-lg left-0 right-0 z-50 backdrop-blur-sm bg-opacity-90 font-['Poppins']"
+      className="bg-black fixed max-w-7xl p-3 mx-auto text-white tracking-wide top-3 rounded-lg left-0 right-0 z-50 backdrop-blur-sm bg-opacity-90 "
     >
       <div className="flex justify-between items-center px-4">
         {/* Logo */}

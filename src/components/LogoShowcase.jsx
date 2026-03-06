@@ -38,7 +38,7 @@ const LogoStrip = ({ direction = "left" }) => {
 
 export default function LogoShowcase() {
   return (
-    <section className="relative bg-[#D70C09] flex items-center justify-center py-20 overflow-hidden font-['Poppins']">
+    <section className="relative bg-[#D70C09] flex items-center justify-center py-20 overflow-hidden">
       {/* Background Rotating 3D Shape */}
       <motion.img
         src="/image.svg"

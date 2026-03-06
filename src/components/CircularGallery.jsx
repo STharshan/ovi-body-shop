@@ -46,7 +46,7 @@ function createTextTexture(gl, text, font = 'bold 30px monospace', color = 'blac
 
 /* ---------- Title (caption) ---------- */
 class Title {
-  constructor({ gl, plane, renderer, text, textColor = '#545050', font = '30px sans-serif' }) {
+  constructor({ gl, plane, renderer, text, textColor = '#545050', font = '30px' }) {
     autoBind(this);
     this.gl = gl;
     this.plane = plane;
@@ -248,7 +248,7 @@ class Media {
       renderer: this.renderer,
       text: this.text,
       textColor: this.textColor,
-      font: this.font // <-- FIX: pass as `font` (was `fontFamily`)
+      font: this.font // <-- FIX: pass as `font` (was `)
     });
   }
 
