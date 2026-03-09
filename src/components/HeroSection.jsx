@@ -72,12 +72,12 @@ const HeroSection = () => {
             Get a Quote
           </button>
 
-          <button
-            onClick={() => scrollToSection("service")}
+          <a
+            href="/#gallery"
             className="border-2 border-white text-white font-semibold px-8 py-3 text-sm uppercase hover:shadow-sm hover:shadow-[#D70C09] tracking-widest hover:bg-white hover:text-black transition-all duration-300"
           >
-            View Services
-          </button>
+            View Our Work
+          </a>
         </div>
       </div>
     </section>
