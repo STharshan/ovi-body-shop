@@ -1,5 +1,3 @@
-
-
 const HeroSection = () => {
   // Smooth scroll function
   const scrollToSection = (id) => {
@@ -14,16 +12,20 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative w-full h-[120vh] overflow-hidden flex items-center justify-center">
+    <section 
+      id="home" 
+      className="relative w-full h-[120vh] overflow-hidden flex items-center justify-center bg-black"
+    >
       {/* Background Video */}
       <video
         autoPlay
         loop
         muted
         playsInline
+        poster="/fall.png" 
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/car-bg.mp4" type="video/mp4" />
+        <source src="/bg.mp4" type="video/mp4" />
       </video>
 
       {/* Gradient Glow */}
@@ -61,7 +63,7 @@ const HeroSection = () => {
           Ovi Car Body Repair has been delivering top-quality spray booth and repair services in Sheffield since 2012.
         </p>
 
-        {/* Buttons (NO AOS – NO REVEAL ANIMATION) */}
+        {/* Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={() => scrollToSection("contact")}
