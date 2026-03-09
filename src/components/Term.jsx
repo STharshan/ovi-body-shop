@@ -1,5 +1,3 @@
-// src/pages/TermsConditions.js
-
 
 const TermsConditions = () => {
     return (

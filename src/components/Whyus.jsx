@@ -8,13 +8,13 @@ const About = () => {
       id="about"
       className="relative bg-black text-white px-6 md:px-12 lg:px-24 py-20 overflow-hidden "
     >
-      {/* 🔥 Red Glow Background */}
+      {/* Red Glow Background */}
       <div className="absolute inset-0 pointer-events-none -z-10">
         <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      {/* 🏁 Top Section Title */}
+      {/* Top Section Title */}
       <div className="max-w-6xl mx-auto relative">
         <p
           data-aos="fade-down"
@@ -45,7 +45,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* 📘 Content Grid */}
+      {/* Content Grid */}
       <div className="mt-16 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 mb-10">
           {/* Our Story */}

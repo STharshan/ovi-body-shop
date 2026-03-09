@@ -2,7 +2,7 @@
 import CircularGallery from "./CircularGallery";
 
 export default function GallerySection() {
-  // ⭐ Smooth Scroll Function
+  // Smooth Scroll Function
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -60,20 +60,13 @@ export default function GallerySection() {
           passion, and performance.
         </p>
 
-        {/* ⭐ Buttons */}
+        {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-14">
           <button
             onClick={() => scrollToSection("contact")}
             className="bg-[#D70C09] hover:bg-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300"
           >
             Book Repair
-          </button>
-
-          <button
-            onClick={() => scrollToSection("service")}
-            className="border border-[#D70C09] hover:border-[#868386] hover:text-[#868386] text-white font-semibold uppercase px-8 py-3 rounded-md transition-all duration-300"
-          >
-            View Services
           </button>
         </div>
       </div>
