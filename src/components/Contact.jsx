@@ -15,11 +15,11 @@ const ContactSection = () => {
 
     const text =
       `New Contact Form Submission:%0A%0A` +
-      `👤 Name: ${name}%0A` +
-      `📧 Email: ${email}%0A` +
-      `📱 Phone: ${phone}%0A` +
-      `📌 Subject: ${subject}%0A` +
-      `💬 Message: ${message}`;
+      `Name: ${name}%0A` +
+      `Email: ${email}%0A` +
+      `Phone: ${phone}%0A` +
+      `Subject: ${subject}%0A` +
+      `Message: ${message}`;
 
     window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
   };

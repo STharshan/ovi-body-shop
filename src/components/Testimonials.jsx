@@ -38,7 +38,7 @@ const testimonials = [
 const TestimonialsSection = () => {
   const [paused, setPaused] = useState(false);
 
-  // ⭐ Smooth Scroll Function
+  // Smooth Scroll Function
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -57,13 +57,13 @@ const TestimonialsSection = () => {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* 🔥 Glow */}
+      {/* Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-[#D70C09]/30 blur-[180px] rounded-full -translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#D70C09]/20 blur-[160px] rounded-full translate-x-1/3 translate-y-1/3"></div>
       </div>
 
-      {/* ⭐ Header */}
+      {/* Header */}
       <div
         className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-14"
         data-aos="fade-up"
@@ -81,7 +81,7 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        {/* ⭐ UPDATED BUTTON WITH SCROLL */}
+        {/* UPDATED BUTTON WITH SCROLL */}
         <button
           onClick={() => scrollToSection("contact")}
           data-aos="zoom-in"
