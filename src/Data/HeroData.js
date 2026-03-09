@@ -48,13 +48,6 @@ const ServiceHero = {
         description: "Professional MOT testing to ensure your vehicle meets UK road safety and environmental standards. Our certified testers provide thorough inspections with clear reporting, helping you stay compliant, safe, and road-legal.",
         phone: "+44 7788 275026"
     },
-    Mechanical: {
-        badgeText: "Expert Mechanical Engineering",
-        title: "Mechanical Repairs & ",
-        highlight: "Vehicle Diagnostics",
-        description: "Comprehensive mechanical repairs to restore performance, reliability, and safety. From minor faults to major mechanical failures, our skilled technicians diagnose and repair issues using advanced tools and manufacturer-approved procedures.",
-        phone: "+44 7788 275026"
-    }
 }
 
 export default ServiceHero;

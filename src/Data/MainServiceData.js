@@ -72,16 +72,6 @@ const MainServices = {
         ],
       },
       {
-        title: "Mechanical & Structural Checks",
-        desc: "Ensuring your vehicle is safe and fully operational after an accident",
-        highlights: [
-          "Steering and suspension checks",
-          "Wheel alignment after repairs",
-          "Safety systems inspection (airbags, sensors)",
-          "Certified repair standards",
-        ],
-      },
-      {
         title: "Custom Restoration & Finishing",
         desc: "Restoring your vehicle’s appearance and value to pre-accident condition",
         highlights: [
@@ -330,54 +320,6 @@ const MainServices = {
       },
     ],
   },
-  MechanicalRepairs: {
-    title: "Professional Mechanical Repairs",
-    subtitle:
-      "Expert mechanical repair solutions designed to keep your vehicle running efficiently, safely, and reliably.",
-    services: [
-      {
-        title: "Engine Repairs & Maintenance",
-        desc: "Professional engine repair services to restore power, efficiency, and reliability.",
-        highlights: [
-          "Engine fault diagnosis and repair",
-          "Timing belt and chain replacement",
-          "Oil leaks and gasket repairs",
-          "Turbocharger and fuel system repairs",
-        ],
-      },
-      {
-        title: "Brake System Repairs",
-        desc: "Complete brake system inspection and repair for maximum stopping power and safety.",
-        highlights: [
-          "Brake pads and disc replacement",
-          "Brake fluid flush and bleeding",
-          "Calliper and brake line repairs",
-          "ABS system diagnostics",
-        ],
-      },
-      {
-        title: "Suspension & Steering Repairs",
-        desc: "Restoring ride comfort, handling, and vehicle stability.",
-        highlights: [
-          "Shock absorbers and spring replacement",
-          "Bushes, ball joints, and control arms",
-          "Power steering repairs",
-          "Wheel alignment and handling checks",
-        ],
-      },
-      {
-        title: "Transmission & Clutch Repairs",
-        desc: "Expert repair and maintenance for manual and automatic transmissions.",
-        highlights: [
-          "Clutch replacement and adjustment",
-          "Gearbox diagnostics and repair",
-          "Automatic transmission servicing",
-          "Drivetrain and differential repairs",
-        ],
-      },
-    ],
-  }
-
 
 };
 

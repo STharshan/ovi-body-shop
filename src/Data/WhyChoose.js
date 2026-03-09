@@ -138,27 +138,6 @@ const WhyChoose = {
       "Recent accident or major repair work",
     ],
   },
-  WhyChooseMechanicalRepairs: {
-    title: "Why Choose Professional Mechanical Repairs?",
-    subtitle:
-      "Timely mechanical repairs are essential to prevent breakdowns, maintain safety, and extend the lifespan of your vehicle. Our technicians use advanced diagnostic equipment and quality parts to ensure reliable, long-lasting repairs.",
-    benefits: [
-      "Restores vehicle performance and efficiency",
-      "Prevents costly breakdowns and major failures",
-      "Improves safety and driving stability",
-      "Extends engine and drivetrain lifespan",
-      "Manufacturer-approved parts and procedures",
-      "Transparent diagnostics and repair advice",
-    ],
-    signs: [
-      "Warning lights on the dashboard",
-      "Unusual noises or vibrations",
-      "Loss of power or poor acceleration",
-      "Fluid leaks under the vehicle",
-      "Steering or braking issues",
-      "Difficulty starting or gear shifting problems",
-    ],
-  }
 
 };
 

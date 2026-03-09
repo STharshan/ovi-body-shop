@@ -139,37 +139,6 @@ const Servicesterm = {
       },
     ],
   },
-  AdditionalMechanicalServices: {
-    title: "Additional Mechanical Services",
-    subtitle:
-      "Professional mechanical maintenance and repair services for all vehicle systems.",
-    services: [
-      {
-        title: "Exhaust System Repair & Replacement",
-        desc: "Expert repair and replacement to maintain proper emissions and performance.",
-      },
-      {
-        title: "Cooling System & Radiator Repairs",
-        desc: "Prevent overheating with professional radiator and cooling system maintenance.",
-      },
-      {
-        title: "Battery & Charging System Repairs",
-        desc: "Ensure reliable starting and electrical performance with battery and charging system service.",
-      },
-      {
-        title: "Fuel System Diagnostics",
-        desc: "Identify and fix fuel system issues for optimal engine efficiency.",
-      },
-      {
-        title: "Electrical & Sensor Fault Repairs",
-        desc: "Professional diagnostics and repair for all vehicle electrical and sensor issues.",
-      },
-      {
-        title: "Air Conditioning Mechanical Repairs",
-        desc: "Maintain comfort and performance with AC mechanical repair services.",
-      },
-    ],
-  }
 
 };
 

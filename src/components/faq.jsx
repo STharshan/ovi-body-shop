@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "DO YOU DO COMPLETE AUTO RESTORATIONS?",
     answer:
-      "Yes! Our team specializes in full restorations — from classic models to modern vehicles, including paint, bodywork, and mechanical rebuilds.",
+      "Yes! Our team specializes in full restorations — from classic models to modern vehicles, including paint, bodywork.",
   },
   {
     question: "CAN YOU DO A FULL TECHNICAL INSPECTION OF THE CAR?",

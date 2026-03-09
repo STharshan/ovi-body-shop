@@ -4,7 +4,7 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Ovi did an amazing job on my car after I had an accident. It looks completely brand new and exceeded my expectations. A very reasonable price and quick turnaround. I really appreciated the way he kept me informed throughout by sending me pictures and updates of the progress. I highly recommend him to anyone that wants a professional job doing. Lastly he was very welcoming and simplified things as I am not at all mechanical. Thank you Ovi :)",
+      "Ovi did an amazing job on my car after I had an accident. It looks completely brand new and exceeded my expectations. A very reasonable price and quick turnaround. I really appreciated the way he kept me informed throughout by sending me pictures and updates of the progress. I highly recommend him to anyone that wants a professional job doing. Lastly he was very welcoming. Thank you Ovi :)",
     name: "Kitti Nangtalar",
     location: "UK",
     avatar: "1.png",
